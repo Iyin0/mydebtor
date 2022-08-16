@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -22,7 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-=======
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -152,4 +151,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
->>>>>>> 8d653302b8753675589d75c5defc8e53ef885bf3
