@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import LandingPage from "./landingPage";
 import About from "./about";
 import FAQ from "./faq";
@@ -13,7 +13,7 @@ import Privacy from './privacy';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/help" element={<Help />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
