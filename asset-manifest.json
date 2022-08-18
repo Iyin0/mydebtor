@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mydebtor/static/css/main.1a179c4a.css",
+    "main.js": "/mydebtor/static/js/main.28fd1420.js",
+    "index.html": "/mydebtor/index.html",
+    "main.1a179c4a.css.map": "/mydebtor/static/css/main.1a179c4a.css.map",
+    "main.28fd1420.js.map": "/mydebtor/static/js/main.28fd1420.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a179c4a.css",
+    "static/js/main.28fd1420.js"
+  ]
+}
