@@ -33,7 +33,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--main_color);
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Handle on hover */
@@ -44,4 +44,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media screen and (max-width: 576px) {
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1.5px;
+  }
+
 }

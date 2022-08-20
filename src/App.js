@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from "./landingPage";
 import About from "./about";
 import FAQ from "./faq";
@@ -12,6 +12,7 @@ import Terms from './terms';
 import Privacy from './privacy';
 
 function App() {
+
   return (
     <HashRouter>
       <div className="App">

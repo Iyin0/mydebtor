@@ -1,13 +1,19 @@
 import './css/topNavbar.css';
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleLandingDropdown } from './store/landingDropdown';
 
 
 const TopNavbar = () => {
 
+    // const [showDropdown, setShowDropdown] = useState(false);
+
+    const landingDropDownState = useSelector((state) => state.landingPageDropdown.show);
+    const toggleDropdown = useDispatch()
+
     const navigate = useNavigate();
     let location = useLocation();
-    // console.log(location.pathname);
     const ref = useRef()
 
     useEffect(() => {
@@ -38,29 +44,9 @@ const TopNavbar = () => {
 
     }, [location.pathname])
 
-    // if (innerWidth <= 576) {
-    //     document.getElementById("top-dropdown").className = "hide"
-    // }
-
-    // const showTopNav = () => {
-    //     const drop = document.getElementById("top-dropdown");
-    //     if (drop.className === "show") {
-    //         drop.className = "hide"
-    //     }
-    //     else {
-    //         drop.className = "show"
-    //     }
-    // }
-
-    // const hideTopNav = () => {
-    //     document.getElementById("top-dropdown").className = "hide"
-    // }
-
-
     return (
         <nav>
-            <div className="left-nav">
-                {/* <img src="./img/top-nav-app-logo.svg" alt=""> */}
+            <div className="left-nav" onClick={() => toggleDropdown(toggleLandingDropdown(false))}>
                 <svg width="147" height="44" viewBox="0 0 147 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd"
                         d="M43.3899 0.305023H0V43.695H43.3899V0.305023ZM3.33769 40.3573V3.64271H40.0523V40.3573H3.33769ZM8.61129 13.856C8.50127 13.7735 8.34427 13.852 8.34427 13.9895V30.1773C8.34427 30.2695 8.41899 30.3442 8.51116 30.3442H11.5151C11.6072 30.3442 11.682 30.2695 11.682 30.1773V20.6649C11.682 20.5274 11.839 20.4489 11.949 20.5314L16.5884 24.011C16.6477 24.0555 16.7293 24.0555 16.7886 24.011L21.428 20.5314C21.538 20.4489 21.695 20.5274 21.695 20.6649V30.1773C21.695 30.2695 21.7697 30.3442 21.8619 30.3442H28.3704C32.9788 30.3442 36.7146 26.6084 36.7146 22C36.7146 17.3916 32.9788 13.6558 28.3704 13.6558H25.0327L16.7886 19.8388C16.7293 19.8834 16.6477 19.8834 16.5884 19.8388L8.61129 13.856ZM25.0327 26.8396V16.8266C25.0327 16.9188 25.1074 16.9935 25.1996 16.9935H28.3704C31.1354 16.9935 33.3769 19.235 33.3769 22C33.3769 24.765 31.1354 27.0065 28.3704 27.0065H25.1996C25.1074 27.0065 25.0327 26.9318 25.0327 26.8396Z"
@@ -103,22 +89,26 @@ const TopNavbar = () => {
                 <button onClick={() => navigate('/login')} className="welcome-login-btn">Login</button>
                 <button onClick={() => navigate('/signup')} className="welcome-signup-btn">Sign Up</button>
             </div>
-            {/* onclick="showTopNav()" */}
-            {/* <img src={require("./img/showNav.svg")} alt="" className="showNavDropdown" /> */}
-            <svg className="showNavDropdown" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 7H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M3 12H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
-                <path d="M3 17H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
-            </svg>
-            {/* onclick="hideTopNav()" */}
-            <div id="top-dropdown" className="hide">
-                <button className="dropdown-btn" onClick={() => navigate('/')}>Home</button>
-                <button className="dropdown-btn" onClick={() => navigate('/about')}>About Us</button>
-                <button className="dropdown-btn" onClick={() => navigate('/faq')}>FAQ</button>
-                <button className="dropdown-btn" onClick={() => navigate('/contact-us')}>Contact Us</button>
-                <button className="dropdown-btn" onClick={() => navigate('/login')}>Login</button>
-                <button className="dropdown-btn" onClick={() => navigate('/signup')}>Sign Up</button>
-            </div>
+
+            {/* <button className="hamburger" onClick={() => setShowDropdown(!showDropdown)}> */}
+            <button className="hamburger" onClick={() => toggleDropdown(toggleLandingDropdown(!landingDropDownState.payload))}>
+                <svg className="showNavDropdown" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M3 12H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M3 17H21" stroke="#292D32" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+            </button>
+
+            {landingDropDownState.payload ? (
+                <div id="top-dropdown" className="show">
+                    <button className="dropdown-btn" onClick={() => navigate('/')}>Home</button>
+                    <button className="dropdown-btn" onClick={() => navigate('/about')}>About Us</button>
+                    <button className="dropdown-btn" onClick={() => navigate('/faq')}>FAQ</button>
+                    <button className="dropdown-btn" onClick={() => navigate('/contact-us')}>Contact Us</button>
+                    <button className="dropdown-btn" onClick={() => navigate('/login')}>Login</button>
+                    <button className="dropdown-btn" onClick={() => navigate('/signup')}>Sign Up</button>
+                </div>
+            ) : (null)}
         </nav>
     );
 }

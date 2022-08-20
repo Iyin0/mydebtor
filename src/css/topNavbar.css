@@ -114,21 +114,14 @@ nav .right-nav {
     background-color: var(--clicked_color);
 }
 
-.showNavDropdown {
-    display: none;
-}
-
-.hide {
+.hamburger {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
     display: none;
 }
 
 .show {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 70px;
-    right: 5px;
-    width: 95%;
+    display: none;
 }
 
 .show button {
@@ -148,4 +141,46 @@ nav .right-nav {
 
 .show button:active {
     background-color: var(--clicked_color);
+}
+
+@media screen and (max-width: 576px) {
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    nav {
+        padding: 16px;
+        padding-top: 40px;
+    }
+
+    nav .middle-nav,
+    nav .right-nav {
+        display: none;
+    }
+
+    .left-nav {
+        flex-grow: 1;
+    }
+
+    .showNavDropdown {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .show {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 70px;
+        right: 2.5%;
+        width: 95%;
+        z-index: 2;
+        /* max-width: 380px; */
+    }
+
 }
