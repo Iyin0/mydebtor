@@ -15,6 +15,10 @@ const LandingPage = () => {
 
     const hideDropdown = useDispatch();
 
+    const hideTopNav = () => {
+        hideDropdown(toggleLandingDropdown(false))
+    }
+
     const [cookiesState, setCookieState] = useState(false);
     const [checked, setChecked] = useState(true);
 
@@ -43,15 +47,16 @@ const LandingPage = () => {
         setTimeout(() => setCookieState(true), 3000)
     }, [])
 
-    const hideTopNav = () => {
-        hideDropdown(toggleLandingDropdown(false))
-    }
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
 
     return (
         <div>
             <TopNavbar />
 
-            <main onClick={() => hideTopNav()}>
+            <main onClick={() => hideTopNav()} className='landing-page'>
 
                 {/* Cookies */}
                 {cookiesState ? (

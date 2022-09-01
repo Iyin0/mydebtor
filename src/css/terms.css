@@ -1,0 +1,131 @@
+:root {
+    --main_color: #0A66C2;
+    --footer_color: #0855A2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+}
+
+.terms {
+    display: flex;
+    padding: 0px 72px 100px 72px;
+    color: #292929;
+    margin-top: 50px;
+    margin-bottom: 116px;
+}
+
+.side-panel {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.links {
+    width: 70%;
+    height: 764px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(199, 139, 165, 0.16);
+    border-radius: 8px;
+    margin-top: 147.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 16px;
+}
+
+.terms .links a {
+    width: 100%;
+    height: 59px;
+    margin-top: 8px;
+    padding: 4.5px 16px;
+    background-color: #fefefe;
+    box-shadow: 0px 4px 8px rgba(199, 139, 165, 0.16);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #333333;
+}
+
+
+.main-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms h2 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 51px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.last-update {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7e7e7e;
+    margin: 0;
+    margin: 4px 0px 16px 0px;
+}
+
+.terms h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.terms .body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+
+    .terms {
+        padding: 0px 16px 10px 16px;
+    }
+
+    .side-panel {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .terms h2 {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 51px;
+        margin-top: 0px;
+    }
+
+    .last-update {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .terms h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .terms .body {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

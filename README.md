@@ -1,2 +1,2 @@
 # mydebtor
-Zuri project phase app for team 36 (cohort May - August 2022)
+Zuri project phase app for team 36 2022 Cohort 1

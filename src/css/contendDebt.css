@@ -1,0 +1,354 @@
+:root {
+    --main_color: #0A66C2;
+    --footer_color: #0855A2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+}
+
+.contend-debt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 0px 94px 0px;
+    color: #292929;
+}
+
+.contend-debt h2 {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+.debtor-details {
+    width: 70%;
+    margin-bottom: 67px;
+}
+
+.debtor-container {
+    border: 1.5px dashed #0A66C2;
+    border-radius: 15px;
+    padding: 18px;
+}
+
+.detail {
+    width: 100%;
+    height: 116px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    padding: 16px 22px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.last {
+    margin-bottom: 0;
+}
+
+.detail h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #3D3D3D;
+}
+
+.detail p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #0A66C2;
+}
+
+.owed {
+    background-color: #F9F9F9;
+    padding: 18px 38px 18px 18px;
+    border-radius: 15px;
+}
+
+.amount-owed {
+    display: flex;
+    align-items: center;
+}
+
+.amount-owed p {
+    margin: 0;
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 79px;
+    display: flex;
+    align-items: center;
+    color: #1F1F1F;
+}
+
+.debt-description h4 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin: 24px 0px 0px 0px;
+}
+
+.debt-description p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+
+}
+
+.to-contend {
+    background-color: var(--main_color);
+    color: var(--white_color);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 16px 32px;
+    width: 70%;
+    height: 76px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.to-contend:hover {
+    background-color: var(--hover_color);
+}
+
+.to-contend:active {
+    background-color: var(--clicked_color);
+}
+
+/* DOM styling */
+.cover {
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.contend-debt .popup {
+    width: 35%;
+    height: 371px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.color {
+    background-color: #0A66C2;
+    width: 20px;
+    height: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.blank {
+    background-color: #fefefe;
+    flex-grow: 2;
+    border-radius: 0px 20px 20px 0px;
+    padding-left: 20px;
+}
+
+.contend-debt-status {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 55px;
+    margin: 0;
+    margin: 32px 0px 27px 0px;
+}
+
+.contend-debt-para {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #3d3d3d;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.contend-debt-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 79px;
+}
+
+.cancel-btn {
+    border: none;
+    background-color: #fefefe;
+    cursor: pointer;
+    color: #FF4040;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    width: 152px;
+    height: 59px;
+    padding: 0;
+}
+
+.contend-btn {
+    width: 180px;
+    height: 59px;
+    border-radius: 8px;
+    padding: 16px 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: var(--main_color);
+    border: none;
+}
+
+.contend-btn:hover {
+    background-color: var(--hover_color);
+}
+
+.contend-btn:active {
+    background-color: var(--clicked_color);
+}
+
+@media screen and (max-width: 576px) {
+
+    .contend-debt {
+        padding: 35px 0px 72px 0px;
+    }
+
+    .contend-debt h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .debtor-details {
+        width: 90%;
+        margin-bottom: 39px;
+    }
+
+    .debtor-container {
+        border: 1px dashed #0A66C2;
+        border-radius: 6px;
+        padding: 7px;
+    }
+
+    .detail {
+        height: 63px;
+        padding: 6px 8px;
+    }
+
+    .detail h3 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .detail p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: -15px;
+    }
+
+    .owed {
+        background-color: var(--white_color);
+        padding: 8px;
+    }
+
+    .amount-owed svg {
+        transform: scale(0.4);
+        margin: -20px;
+    }
+
+    .amount-owed p {
+        font-weight: 400;
+        font-size: 22.968px;
+        line-height: 31px;
+        /* margin-left: -15px; */
+    }
+
+    .debt-description h4 {
+        font-weight: 500;
+        font-size: 13.464px;
+        line-height: 18px;
+        margin: 6px 0px 0px 0px;
+    }
+
+    .debt-description p {
+        font-weight: 400;
+        font-size: 7.92px;
+        line-height: 11px;
+    }
+
+    .to-contend {
+        height: 55px;
+        width: 90%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .contend-debt .popup {
+        width: 90%;
+        height: 220px;
+    }
+
+    .blank {
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    .color {
+        width: 10px;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    .contend-debt-status {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        margin: 41px 0px 12px 0px;
+    }
+
+    .contend-debt-para {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 44px;
+    }
+
+    .contend-debt-btn-container {
+        padding-right: 47px;
+    }
+
+    .cancel-btn {
+        font-weight: 500;
+        font-size: 11.875px;
+        line-height: 16px;
+        width: 90px;
+        height: 35px;
+    }
+
+    .contend-btn {
+        width: 100px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 11.875px;
+        line-height: 16px;
+        padding: 8px;
+    }
+}

@@ -100,7 +100,7 @@ const TopNavbar = () => {
             </button>
 
             {landingDropDownState.payload ? (
-                <div id="top-dropdown" className="show">
+                <div id="top-dropdown" className="show" onClick={() => toggleDropdown(toggleLandingDropdown(false))}>
                     <button className="dropdown-btn" onClick={() => navigate('/')}>Home</button>
                     <button className="dropdown-btn" onClick={() => navigate('/about')}>About Us</button>
                     <button className="dropdown-btn" onClick={() => navigate('/faq')}>FAQ</button>

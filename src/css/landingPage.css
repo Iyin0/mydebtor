@@ -50,7 +50,7 @@
     display: flex;
 }
 
-.welcome-top button {
+.welcome-top .get_started {
     width: 210px;
     height: 57px;
     border-radius: 8px;
@@ -66,16 +66,14 @@
     border: none;
 }
 
-.welcome-top button:hover {
+.welcome-top .get_started:hover {
     background-color: var(--hover_color);
 }
 
-.welcome-top button:active {
+.welcome-top .get_started:active {
     background-color: var(--clicked_color);
 }
 
-
-/* A background image will be used instead */
 .welcome-top-right {
     width: 40%;
     height: 90%;
@@ -147,7 +145,8 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     position: fixed;
-    top: 0px;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +166,7 @@
     color: #000000;
 }
 
-.cookies p {
+.cookies-body {
     margin: 0
 }
 
@@ -217,7 +216,7 @@
     justify-content: space-between;
     width: 98%;
     padding: 8px 5px 0px 0px;
-    margin: 15px 0px 8px;
+    margin: 4px 0px;
 }
 
 .cookie {
@@ -232,6 +231,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+    margin: 0;
 }
 
 .text-body {
@@ -239,6 +239,7 @@
     font-size: 14px;
     line-height: 19px;
     padding-top: 8px;
+    margin: 0;
 }
 
 
@@ -250,7 +251,7 @@
 }
 
 /* Hide the input */
-.switch input {
+.checkbox {
     opacity: 0;
     width: 0;
     height: 0;
@@ -284,15 +285,15 @@
 }
 
 /* sets the background color when checked */
-.switch input:checked+.slider {
+.switch .checkbox:checked+.slider {
     background-color: var(--main_color);
 }
 
-.switch input:focus+.slider {
+.switch .checkbox:focus+.slider {
     box-shadow: 0 0 1px var(--main_color);
 }
 
-.switch input:checked+.slider:before {
+.switch .checkbox:checked+.slider:before {
     -webkit-transform: translateX(18px);
     -ms-transform: translateX(18px);
     transform: translateX(18px);
