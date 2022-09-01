@@ -132,8 +132,8 @@ const LandingPage = () => {
                         <div className="welcome-bottom-icons">
                             <img className="welcome-bottom-icon icon1" src={require("./img/122-1224567_stafford-county-public-school-logo-best-logo-for 1.png")} alt="" />
                             <img className="welcome-bottom-icon icon2" src={require("./img/cropped-School-Badge 1.png")} alt="" />
-                            <img className="welcome-bottom-icon icon3" src={require("./img/png-transparent-british-international-school-in-cairo-sun-of-knowledge-british-international-school-sbis-school-text-egypt-logo 1.png")} alt="" />
-                            <img className="welcome-bottom-icon icon4" src={require("./img/png-transparent-british-international-school-of-kuala-lumpur-british-school-of-brasilia-british-school-of-nanjing-doha-college-school-label-logo-international 1.png")} alt="" />
+                            <img className="welcome-bottom-icon icon3" src={require("./img/png-transparent-british-international-school-in-cairo.png")} alt="" />
+                            <img className="welcome-bottom-icon icon4" src={require("./img/png-transparent-british-international-school-of-kuala.png")} alt="" />
                             <img className="welcome-bottom-icon icon5" src={require("./img/preloader 1.png")} alt="" />
                         </div>
                     </div>
