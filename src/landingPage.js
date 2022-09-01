@@ -272,7 +272,7 @@ const LandingPage = () => {
                             <div className="card-container left-top">
                                 <div className="card1">
                                     <div className="card-header">
-                                        <div className="school-pic"></div>
+                                        <div className="school-pic"><img src={require("./img/Ellipse 14.png")} alt="" /></div>
                                         <p className="school-person">Miss. Taiwo Odeyemi<br />Principal. Royal girls college
                                         </p>
                                     </div>
@@ -287,7 +287,7 @@ const LandingPage = () => {
                             <div className="card-container left-bottom">
                                 <div className="card2">
                                     <div className="card-header">
-                                        <div className="school-pic"></div>
+                                        <div className="school-pic"><img src={require("./img/Ellipse 15 (1).png")} alt="" /></div>
                                         <p className="school-person">Mrs. Jane Lambert<br />Director. British Grammer School
                                         </p>
                                     </div>
@@ -303,7 +303,7 @@ const LandingPage = () => {
                             <div className="card-container right-top">
                                 <div className="card2">
                                     <div className="card-header">
-                                        <div className="school-pic"></div>
+                                        <div className="school-pic"><img src={require("./img/Ellipse 15.png")} alt="" /></div>
                                         <p className="school-person">Doc. John Maduka<br />Primary school owner</p>
                                     </div>
                                     <article className="card-body">
@@ -315,7 +315,7 @@ const LandingPage = () => {
                             <div className="card-container right-bottom">
                                 <div className="card1">
                                     <div className="card-header">
-                                        <div className="school-pic"></div>
+                                        <div className="school-pic"><img src={require("./img/Ellipse 15 (2).png")} alt="" /></div>
                                         <p className="school-person">Mr. Gbemi Adura<br />School Bursar</p>
                                     </div>
                                     <article className="card-body">
