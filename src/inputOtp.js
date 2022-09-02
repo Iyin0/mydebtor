@@ -21,6 +21,7 @@ const InputOtp = () => {
 
     useEffect(() => {
         console.log('Your OTP is ' + otp);
+        setTimeout(() => window.alert('Your OTP is ' + otp), 5000)
     }, [otp])
 
 
