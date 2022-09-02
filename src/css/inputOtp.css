@@ -314,11 +314,11 @@
     }
 
     .code {
-        width: 70%;
+        width: 100%;
     }
 
     .code input {
-        width: 31px;
+        width: 30px;
         height: 44px;
         border-bottom: 5px solid var(--main_color);
         font-size: 29px;

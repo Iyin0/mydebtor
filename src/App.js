@@ -17,6 +17,7 @@ import VerifyOtpFail from './verifyOtpFail';
 import Kyc from './kyc';
 import ContendDebt from './contendDebt';
 import ContendUpload from './contendUpload';
+import ForgotPassword from './forgotPassword';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/verify1" element={<SendOtp />} />
           <Route path="/verify2" element={<InputOtp />} />
