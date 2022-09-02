@@ -454,7 +454,8 @@
     }
 
     .kyc .upload {
-        height: 257px;
+        height: auto;
+        padding: 30px
     }
 
     .kyc .drag {
