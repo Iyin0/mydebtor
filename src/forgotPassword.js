@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './css/forgotPassword.css'
 
@@ -19,6 +19,11 @@ const ForgotPassword = () => {
     const [invalidEmail, setInvalidEmail] = useState(false);
     const [invalidPwd, setInvalidPwd] = useState(false);
     const [email, setEmail] = useState("");
+
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
 
     const togglePwdVisibility = () => {
         if (showpwd === false) {

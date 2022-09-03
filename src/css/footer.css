@@ -146,11 +146,24 @@ footer {
 
     .footer-bottom {
         margin-top: 24px;
+        flex-direction: column;
+        height: auto;
+        display: flex;
     }
 
-    .copyright,
     .footer-line {
         display: none;
+    }
+
+    .copyright {
+        order: 1;
+        margin: 30px 0px 20px 0px;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+
+    .socials {
+        margin-top: 20px;
     }
 
     .socials svg {

@@ -26,6 +26,11 @@ const Login = () => {
         setShowpwd(false);
     }, [])
 
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     const login = () => {
         if (schoolEmail === '') {
             password_len.current.classList.add('password-err');

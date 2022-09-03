@@ -13,6 +13,11 @@ const InputOtp = () => {
     // The state for our timer
     const [timer, setTimer] = useState(': 00:00');
 
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
 
     useEffect(() => {
         setInputs(Array.from(otpInput.current.children));

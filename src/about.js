@@ -3,6 +3,8 @@ import TopNavbar from "./topNavbar";
 import './css/about.css'
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { toggleLandingDropdown } from './store/landingDropdown';
 
 const About = () => {
 
@@ -13,10 +15,16 @@ const About = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
     }, []);
 
+    const hideDropdown = useDispatch();
+
+    const hideTopNav = () => {
+        hideDropdown(toggleLandingDropdown(false))
+    }
+
     return (
         <div>
             <TopNavbar />
-            <main className="about">
+            <main className="about" onClick={() => hideTopNav()} >
                 <div className="about-first">
                     <div className="about-first-left">
                         <h2 className="about-text1">Think About This...</h2>
