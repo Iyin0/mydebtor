@@ -39,6 +39,18 @@
     width: 100%;
 }
 
+/* .login-entry-logo {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+} */
+
+.login-home {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
 .login-entry-text {
     margin-top: 40%;
 }

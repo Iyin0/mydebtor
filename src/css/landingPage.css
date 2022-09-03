@@ -654,6 +654,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: auto;
     margin-top: 45px;
 }
 
@@ -661,15 +662,18 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 .faq-left,
 .faq-right {
-    height: 294px;
+    min-height: 294px;
 }
 
 .faq-bottom .faq-closed {
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
     height: 62px;
     display: flex;
     align-items: center;
@@ -687,8 +691,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 216px;
-    width: 445px;
+    min-height: 216px;
+    max-width: 445px;
+    width: 100%;
     padding: 16px 32px;
     margin: 0px 0px 10px 0px;
     background-color: white;

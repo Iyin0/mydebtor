@@ -126,6 +126,9 @@ const InputOtp = () => {
     // mount only
     useEffect(() => {
         clearTimer(getDeadTime());
+
+        // The code below disables useEffect warning
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [inputs]);   // dependency used to trigger re-render so as to set the input from null
 
     const submit = () => {

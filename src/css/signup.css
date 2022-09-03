@@ -62,6 +62,11 @@
     height: 20%;
 } */
 
+.signup-home {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
 .signup-form-container {
     padding: 40px 10px;
     flex-grow: 1;
