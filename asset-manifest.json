@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mydebtor/static/css/main.cc7c7fee.css",
-    "main.js": "/mydebtor/static/js/main.e160e01c.js",
+    "main.css": "/mydebtor/static/css/main.6c630854.css",
+    "main.js": "/mydebtor/static/js/main.bfc5b806.js",
     "static/media/Group 115.png": "/mydebtor/static/media/Group 115.9ddd0d49fdb8a652271c.png",
     "static/media/unsplash_IrRbSND5EUc.png": "/mydebtor/static/media/unsplash_IrRbSND5EUc.25bd934fb4b375a23c8b.png",
     "static/media/Group 100.png": "/mydebtor/static/media/Group 100.e029c9891900b94cc05b.png",
@@ -14,11 +14,11 @@
     "static/media/preloader 1.png": "/mydebtor/static/media/preloader 1.8eec8c3f87ab8bcfce1e.png",
     "static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.png": "/mydebtor/static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.83a58be56483d634102e.png",
     "index.html": "/mydebtor/index.html",
-    "main.cc7c7fee.css.map": "/mydebtor/static/css/main.cc7c7fee.css.map",
-    "main.e160e01c.js.map": "/mydebtor/static/js/main.e160e01c.js.map"
+    "main.6c630854.css.map": "/mydebtor/static/css/main.6c630854.css.map",
+    "main.bfc5b806.js.map": "/mydebtor/static/js/main.bfc5b806.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc7c7fee.css",
-    "static/js/main.e160e01c.js"
+    "static/css/main.6c630854.css",
+    "static/js/main.bfc5b806.js"
   ]
 }
