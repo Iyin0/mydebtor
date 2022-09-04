@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mydebtor/static/css/main.d8fd6b0e.css",
-    "main.js": "/mydebtor/static/js/main.4b08feab.js",
+    "main.css": "/mydebtor/static/css/main.98ba6c9d.css",
+    "main.js": "/mydebtor/static/js/main.e595a64a.js",
     "static/media/Group 115.png": "/mydebtor/static/media/Group 115.9ddd0d49fdb8a652271c.png",
     "static/media/unsplash_IrRbSND5EUc.png": "/mydebtor/static/media/unsplash_IrRbSND5EUc.25bd934fb4b375a23c8b.png",
     "static/media/Group 100.png": "/mydebtor/static/media/Group 100.e029c9891900b94cc05b.png",
@@ -10,6 +10,7 @@
     "static/media/Group 535.png": "/mydebtor/static/media/Group 535.255d2beacf57977d930d.png",
     "static/media/Group 533.png": "/mydebtor/static/media/Group 533.b3df1241600ad23f8619.png",
     "static/media/Group 114.png": "/mydebtor/static/media/Group 114.f90fb92a56f749aa7726.png",
+    "static/media/Image.png": "/mydebtor/static/media/Image.620117367b60336eaed6.png",
     "static/media/cropped-School-Badge 1.png": "/mydebtor/static/media/cropped-School-Badge 1.0a2b8c04223d4ee0a702.png",
     "static/media/png-transparent-british-international-school-in-cairo.png": "/mydebtor/static/media/png-transparent-british-international-school-in-cairo.79cb228943ad6fc584d6.png",
     "static/media/png-transparent-british-international-school-of-kuala.png": "/mydebtor/static/media/png-transparent-british-international-school-of-kuala.459dbf2dca8a0303a01a.png",
@@ -18,14 +19,15 @@
     "static/media/cairo.png": "/mydebtor/static/media/cairo.119d2afd9455ed1b84d8.png",
     "static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.png": "/mydebtor/static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.83a58be56483d634102e.png",
     "static/media/kuala.png": "/mydebtor/static/media/kuala.d127e607fb312f98e56c.png",
+    "static/media/contact-wave.png": "/mydebtor/static/media/contact-wave.b411e808150415342df5.png",
     "static/media/Rectangle 67.png": "/mydebtor/static/media/Rectangle 67.0ded82b4bef29c577e7c.png",
     "static/media/School-Badge.png": "/mydebtor/static/media/School-Badge.8f189a862c7fb06fe677.png",
     "index.html": "/mydebtor/index.html",
-    "main.d8fd6b0e.css.map": "/mydebtor/static/css/main.d8fd6b0e.css.map",
-    "main.4b08feab.js.map": "/mydebtor/static/js/main.4b08feab.js.map"
+    "main.98ba6c9d.css.map": "/mydebtor/static/css/main.98ba6c9d.css.map",
+    "main.e595a64a.js.map": "/mydebtor/static/js/main.e595a64a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8fd6b0e.css",
-    "static/js/main.4b08feab.js"
+    "static/css/main.98ba6c9d.css",
+    "static/js/main.e595a64a.js"
   ]
 }
