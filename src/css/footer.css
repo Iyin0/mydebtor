@@ -73,12 +73,18 @@ footer {
     padding-left: 6px;
 }
 
-.copyright .footer-small-text {
+.copyright .footer-small-text,
+.to-portfolio {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     margin: 0;
     margin-left: 6.5px;
+}
+
+.to-portfolio {
+    color: var(--white_color);
+    margin-left: 0;
 }
 
 .footer-line {
