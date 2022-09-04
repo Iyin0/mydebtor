@@ -623,25 +623,25 @@
 }
 
 /* FAQ */
-.faq {
+.landing-page .faq {
     padding: 70px 72px;
 }
 
-.faq-top {
+.landing-page .faq-top {
     width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
 }
 
-.faq-header h2 {
+.landing-page .faq-header h2 {
     font-size: 40px;
     font-weight: 500;
     line-height: 55px;
     margin: 0;
 }
 
-.faq-header p {
+.landing-page .faq-header p {
     font-size: 20px;
     font-weight: 400;
     line-height: 27px;
@@ -649,7 +649,7 @@
 }
 
 
-.faq-bottom {
+.landing-page .faq-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -658,7 +658,7 @@
     margin-top: 45px;
 }
 
-.faq-bottom-container {
+.landing-page .faq-bottom-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -666,8 +666,8 @@
     max-width: 1000px;
 }
 
-.faq-left,
-.faq-right {
+.landing-page .faq-left,
+.landing-page .faq-right {
     min-height: 294px;
 }
 
@@ -998,7 +998,7 @@
         margin-bottom: 19px;
     }
 
-    .faq {
+    .landing-page .faq {
         display: none;
     }
 }
