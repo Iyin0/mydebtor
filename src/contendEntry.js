@@ -33,7 +33,7 @@ const ContendEntry = () => {
                         <input type="email" placeholder="Email@mydebtor.com" className="contend-input" />
                         <label htmlFor="" className="contend-label">Debt ID</label>
                         <input type="text" placeholder="FGC-GL-1021-27082022" className="contend-input" />
-                        <button className="submit-entry" onClick={() => navigate('/contend-debt')}>Submit</button>
+                        <button className="submit-entry" onClick={(e) => { e.preventDefault(); navigate('/contend-debt') }}>Submit</button>
                     </form>
                 </div>
             </main>
