@@ -19,8 +19,8 @@ const Login = () => {
     const schPwd = useRef();
 
     // const addSignupDetails = useDispatch();
-    const email = 'firstexampleschool@gmail.com';
-    const pass = 'firstexampleschool';
+    const email = 'mydebtor@gmail.com';
+    const pass = 'mydebtor@gmail.com';
 
     useEffect(() => {
         setShowpwd(false);
@@ -53,6 +53,7 @@ const Login = () => {
             password_text.current.innerText = "Incorrect email and password";
             schEmail.current.classList.add('login-error');
             schPwd.current.classList.add('login-error');
+            window.alert("Deault Email and Password is the Email placeholder")
         }
         else {
             password_len.current.classList.remove('password-err');
@@ -131,7 +132,7 @@ const Login = () => {
                 <form action="" className='login-form'>
                     <label htmlFor="" className="login-label">Email Address</label><br />
                     <input type="text" className="login-input" ref={schEmail} value={schoolEmail}
-                        placeholder="Myschoolemail@gmail.com"
+                        placeholder="mydebtor@gmail.com"
                         onChange={(e) => setSchoolEmail(e.target.value)} /><br />
                     <label htmlFor="" className="login-label">Password</label><br />
                     <div className="login-input login-pswd" ref={schPwd} >

@@ -4,8 +4,9 @@ import './css/landingPage.css'
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
+import { cookiePopupState } from "./store/cookies";
 
 
 
@@ -14,12 +15,14 @@ const LandingPage = () => {
     const navigate = useNavigate();
 
     const hideDropdown = useDispatch();
+    const cookiesState = useSelector((cookie) => cookie.cookie.show);
+    // console.log(cookieState)
 
     const hideTopNav = () => {
         hideDropdown(toggleLandingDropdown(false))
     }
 
-    const [cookiesState, setCookieState] = useState(false);
+    // const [cookiesState, setCookieState] = useState(false);
     const [checked, setChecked] = useState(true);
 
     const cookies_list = [
@@ -44,7 +47,7 @@ const LandingPage = () => {
     ]
 
     useEffect(() => {
-        setTimeout(() => setCookieState(true), 3000)
+        setTimeout(() => hideDropdown(cookiePopupState(true)), 3000)
     }, [])
 
     useEffect(() => {
@@ -59,12 +62,12 @@ const LandingPage = () => {
             <main onClick={() => hideTopNav()} className='landing-page'>
 
                 {/* Cookies */}
-                {cookiesState ? (
+                {cookiesState.payload ? (
                     <div className="cookies-back">
                         <div className="cookies">
                             <div className="cookies-top">
                                 <h4 className="cookies-head">This website uses cookies</h4>
-                                <button className="svg-btn" onClick={() => setCookieState(false)}>
+                                <button className="svg-btn" onClick={() => hideDropdown(cookiePopupState(false))}>
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M18 6L6 18" stroke="#667080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         <path d="M6 6L18 18" stroke="#667080" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -103,8 +106,8 @@ const LandingPage = () => {
                                 </div>
                             ))}
                             <div className="btn-container">
-                                <button className="btn" onClick={() => setCookieState(false)}>Accept</button>
-                                <button className="btn" onClick={() => setCookieState(false)}>Decline</button>
+                                <button className="btn" onClick={() => hideDropdown(cookiePopupState(false))}>Accept</button>
+                                <button className="btn" onClick={() => hideDropdown(cookiePopupState(false))}>Decline</button>
                             </div>
                         </div>
                     </div>
