@@ -18,6 +18,7 @@ import Kyc from './kyc';
 import ContendDebt from './contendDebt';
 import ContendUpload from './contendUpload';
 import ForgotPassword from './forgotPassword';
+import ErrorPage from './error';
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/contend-debt" element={<ContendDebt />} />
           <Route path="/contend-upload" element={<ContendUpload />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/404" element={<ErrorPage />} />
         </Routes>
       </div>
     </HashRouter>
