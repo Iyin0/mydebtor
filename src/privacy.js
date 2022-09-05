@@ -186,7 +186,7 @@ const Privacy = () => {
         {
             heading: "Contact Information",
             id: "contact-info",
-            body: "TIf You have any questions regarding this Privacy Policy or the Personal Data we collect, or if You wish to make any comments or complaints about anything \
+            body: "If You have any questions regarding this Privacy Policy or the Personal Data we collect, or if You wish to make any comments or complaints about anything \
                 related to this Privacy Policy, please contact us at the following email address: Zuri.I4G@gmail.com."
         },
     ]
