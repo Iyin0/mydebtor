@@ -222,7 +222,6 @@ const Privacy = () => {
                         <div className="container" key={index}
                             ref={(element) => { term_link.current[index] = element }}>
                             <h3 id={term.id}>{term.heading}</h3>
-                            {/* <p className="body">{term.body}</p> */}
                             {term.body.split('\n').map((str, index) => <p className="body" key={index}>{str}</p>)}
                         </div>
                     ))}
