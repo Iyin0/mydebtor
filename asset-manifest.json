@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mydebtor/static/css/main.960a7e3c.css",
-    "main.js": "/mydebtor/static/js/main.05f0ba56.js",
+    "main.css": "/mydebtor/static/css/main.817419cd.css",
+    "main.js": "/mydebtor/static/js/main.d097ea44.js",
     "static/media/Group 115.png": "/mydebtor/static/media/Group 115.9ddd0d49fdb8a652271c.png",
     "static/media/unsplash_IrRbSND5EUc.png": "/mydebtor/static/media/unsplash_IrRbSND5EUc.25bd934fb4b375a23c8b.png",
     "static/media/Group 100.png": "/mydebtor/static/media/Group 100.e029c9891900b94cc05b.png",
@@ -11,6 +11,7 @@
     "static/media/Group 533.png": "/mydebtor/static/media/Group 533.b3df1241600ad23f8619.png",
     "static/media/Group 114.png": "/mydebtor/static/media/Group 114.f90fb92a56f749aa7726.png",
     "static/media/Image.png": "/mydebtor/static/media/Image.620117367b60336eaed6.png",
+    "static/media/image 1.png": "/mydebtor/static/media/image 1.bac37407bade0d16516b.png",
     "static/media/cropped-School-Badge 1.png": "/mydebtor/static/media/cropped-School-Badge 1.0a2b8c04223d4ee0a702.png",
     "static/media/png-transparent-british-international-school-in-cairo.png": "/mydebtor/static/media/png-transparent-british-international-school-in-cairo.79cb228943ad6fc584d6.png",
     "static/media/png-transparent-british-international-school-of-kuala.png": "/mydebtor/static/media/png-transparent-british-international-school-of-kuala.459dbf2dca8a0303a01a.png",
@@ -23,11 +24,11 @@
     "static/media/Rectangle 67.png": "/mydebtor/static/media/Rectangle 67.0ded82b4bef29c577e7c.png",
     "static/media/School-Badge.png": "/mydebtor/static/media/School-Badge.8f189a862c7fb06fe677.png",
     "index.html": "/mydebtor/index.html",
-    "main.960a7e3c.css.map": "/mydebtor/static/css/main.960a7e3c.css.map",
-    "main.05f0ba56.js.map": "/mydebtor/static/js/main.05f0ba56.js.map"
+    "main.817419cd.css.map": "/mydebtor/static/css/main.817419cd.css.map",
+    "main.d097ea44.js.map": "/mydebtor/static/js/main.d097ea44.js.map"
   },
   "entrypoints": [
-    "static/css/main.960a7e3c.css",
-    "static/js/main.05f0ba56.js"
+    "static/css/main.817419cd.css",
+    "static/js/main.d097ea44.js"
   ]
 }
