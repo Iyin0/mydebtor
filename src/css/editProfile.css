@@ -256,6 +256,7 @@
 .pswd {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .pswd input {
@@ -321,6 +322,20 @@
         width: 45%;
     }
 
+    .user-name,
+    .edit-profile h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .edit-profile h2 {
+        margin-top: 50px;
+    }
+
+    .account-info {
+        margin: 20px 0px;
+    }
+
     .user-input input,
     .pswd {
         width: 100%;
@@ -334,6 +349,12 @@
     .edit-dropdown-btn {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .edit-dropdown {
+        width: 100%;
+        margin-top: -20px;
+        max-width: 320px;
     }
 
     .edit-profile .submit {
