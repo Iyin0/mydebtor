@@ -280,7 +280,8 @@
 }
 
 .edit-profile .submit {
-    width: 569px;
+    max-width: 569px;
+    width: 90%;
     height: 56px;
     background-color: var(--main_color);
     border: none;
@@ -305,5 +306,37 @@
 
     .edit-profile-page {
         margin-left: 0;
+    }
+
+    .edit-profile {
+        padding: 0px 16px 40px 16px;
+    }
+
+    .edit-profile h1 {
+        margin: 24px 0px 16px;
+    }
+
+    .edit-profile .change-pic,
+    .edit-profile .delete-pic {
+        width: 45%;
+    }
+
+    .user-input input,
+    .pswd {
+        width: 100%;
+    }
+
+    .edit-profile-dropdown {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .edit-dropdown-btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .edit-profile .submit {
+        width: 100%;
     }
 }
