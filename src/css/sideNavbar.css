@@ -1,0 +1,144 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+}
+
+
+aside {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    position: fixed;
+}
+
+.aside-container {
+    height: 100vh;
+    width: var(--side_navbar_width);
+    background-color: var(--main_color);
+    color: var(--white_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* fixes the side bar and prevents scrolling. Set the margin-left property of the screen by its right to 332px */
+}
+
+
+.aside-top {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-top-icon {
+    width: 100%;
+    margin-bottom: 56px;
+    padding-left: 48px;
+}
+
+.aside-top-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-top-links a {
+    text-decoration: none;
+    color: var(--white_color);
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 16px 48px;
+}
+
+.aside-top-links a.active,
+.aside-bottom a.active {
+    background-color: var(--white_color);
+    color: var(--text_color);
+}
+
+/* Changes the color of the active svg */
+.aside-top-links a.active svg,
+.aside-bottom a.active svg {
+    filter: invert(100%) sepia(100%) saturate(8%) hue-rotate(118deg) brightness(101%) contrast(104%);
+}
+
+.aside-top-links a svg {
+    margin-right: 34px;
+}
+
+.aside-bottom {
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.aside-bottom a {
+    text-decoration: none;
+    color: var(--white_color);
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 16px 48px;
+}
+
+.aside-bottom a svg {
+    margin-right: 34px;
+}
+
+.aside-hide {
+    display: none;
+}
+
+/* SIDE NAVIGATION BAR ENDS HERE */
+
+
+@media screen and (max-width: 576px) {
+
+    .hideSideNav {
+        display: none;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.35);
+        z-index: 1;
+    }
+
+    .aside-container {
+        width: 90%;
+        max-width: var(--side_navbar_width);
+        min-width: var(--side_navbar_width);
+    }
+
+
+    .extendNav {
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        background-color: rgba(134, 134, 134, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    /* .hideNav button {
+        background-color: rgba(230, 213, 213, 0.8);
+        border: none;
+        margin-top: 100px;
+        cursor: pointer;
+    } */
+
+}

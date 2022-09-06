@@ -19,6 +19,10 @@ import ContendDebt from './contendDebt';
 import ContendUpload from './contendUpload';
 import ForgotPassword from './forgotPassword';
 import ErrorPage from './error';
+import EditProfile from './editProfile';
+import Dashboard from './dashboard';
+import CurrentDebtor from './currentDebtor';
+import DebtSummary from './debtSummary';
 
 
 function App() {
@@ -45,8 +49,13 @@ function App() {
           <Route path="/contend" element={<ContendEntry />} />
           <Route path="/contend-debt" element={<ContendDebt />} />
           <Route path="/contend-upload" element={<ContendUpload />} />
-          <Route path="/help" element={<Help />} />
           <Route path="/404" element={<ErrorPage />} />
+
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
+          <Route path="/current-debtors" element={<CurrentDebtor />} />
+          <Route path="/debt-summary" element={<DebtSummary />} />
+          <Route path="/help" element={<Help />} />
         </Routes>
       </div>
     </HashRouter>

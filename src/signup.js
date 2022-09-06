@@ -137,8 +137,16 @@ const Signup = () => {
         }
     }
 
+    const hideSignupDropdown = () => {
+        if (toggleState === true || toggleLga === true || toggleLevel === true) {
+            setToggleLga(false);
+            setToggleState(false);
+            setToggleLevel(false)
+        }
+    }
+
     return (
-        <div className='signup'>
+        <div className='signup' onClick={() => hideSignupDropdown()}>
             <div className="signup-entry-image">
                 <div className="signup-image-cover">
                     <button className="signup-home" onClick={() => navigate('/')}>
@@ -201,7 +209,7 @@ const Signup = () => {
                                     <option value={state} key={index}>{state}</option>
                                 ))}
                             </select><br /> */}
-                            <button className="signup-level" ref={schState} onClick={(e) => { e.preventDefault(); setToggleState(!toggleState) }}>
+                            <button className="signup-level" ref={schState} onClick={(e) => { e.preventDefault(); setToggleState(!toggleState); setToggleLga(false); setToggleLevel(false) }}>
                                 <p className="signup-dropdown-text">{selectState}</p>
                                 <svg width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +239,7 @@ const Signup = () => {
                                     <option value={lga} key={index}>{lga}</option>
                                 ))}
                             </select> */}
-                            <button className="signup-level" ref={schLga} onClick={(e) => { e.preventDefault(); setToggleLga(!toggleLga) }}>
+                            <button className="signup-level" ref={schLga} onClick={(e) => { e.preventDefault(); setToggleLga(!toggleLga); setToggleState(false); setToggleLevel(false) }}>
                                 <p className="signup-dropdown-text">{selectLga}</p>
                                 <svg width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +263,7 @@ const Signup = () => {
                         <option value="Secondary">Secondary</option>
                         <option value="Tertiary">Tertiary</option>
                     </select><br /> */}
-                    <button className="signup-level" ref={schLevel} onClick={(e) => { e.preventDefault(); setToggleLevel(!toggleLevel) }}>
+                    <button className="signup-level" ref={schLevel} onClick={(e) => { e.preventDefault(); setToggleLevel(!toggleLevel); setToggleState(false); setToggleLga(false) }}>
                         <p className="signup-dropdown-text">{institution}</p>
                         <svg width="24" height="24" viewBox="0 0 24 24"
                             fill="none" xmlns="http://www.w3.org/2000/svg"

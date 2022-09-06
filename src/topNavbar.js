@@ -42,7 +42,7 @@ const TopNavbar = () => {
             }
         })
 
-    }, [location.pathname])
+    }, [ref, location.pathname])
 
     return (
         <nav>

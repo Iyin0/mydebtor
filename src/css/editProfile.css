@@ -1,0 +1,309 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+    --error_color: #FF4040;
+}
+
+.edit-profile-page {
+    margin-left: var(--side_navbar_width);
+    overflow-y: scroll;
+}
+
+.edit-profile {
+    padding: 0px 0px 80px 46px;
+}
+
+.edit-profile h1 {
+    margin: 32px 0px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.user-detail {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-left: 16px;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #242433;
+    margin: 0;
+}
+
+.user-address {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #808080;
+    margin: 0;
+}
+
+.user-btns {
+    margin: 26.58px 0px 32px 0px;
+    height: 40px;
+}
+
+.change-pic {
+    width: 158px;
+    height: 100%;
+    padding: 8px 16px;
+    background-color: var(--main_color);
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white_color);
+    cursor: pointer;
+}
+
+.change-pic:hover {
+    background-color: var(--hover_color);
+}
+
+.change-pic:active {
+    background-color: var(--clicked_color);
+}
+
+.delete-pic {
+    width: 158px;
+    height: 100%;
+    padding: 8px 16px;
+    color: var(--main_color);
+    border-radius: 8px;
+    border: 1px solid var(--main_color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: var(--white_color);
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.delete-pic:hover {
+    border: 1px solid var(--hover_color);
+    color: var(--hover_color);
+}
+
+.delete-pic:active {
+    border: 1px solid var(--clicked_color);
+    color: var(--clicked_color);
+}
+
+.edit-profile h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #242433;
+    margin: 0;
+}
+
+.account-info {
+    margin: 32px 0px 24px 0px;
+}
+
+.user-input {
+    margin-bottom: 32px;
+}
+
+.user-input label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.user-input input,
+.pswd {
+    margin-top: 8px;
+    max-width: 569px;
+    width: 90%;
+    height: 56px;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.user-input input:focus,
+.pswd input:focus {
+    outline: none;
+}
+
+.edit-profile-dropdown {
+    display: flex;
+    justify-content: space-between;
+    max-width: 569px;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.edit-profile-dropdown p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.edit-dropdown-btn {
+    margin-top: 8px;
+    width: 250px;
+    height: 56px;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    padding: 16px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.edit-dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    max-width: 250px;
+    height: auto;
+    max-height: 300px;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 2;
+    /* margin-top: 16px; */
+    background-color: rgb(160, 160, 160);
+    border-radius: 8px;
+}
+
+.edit-dropdown::-webkit-scrollbar {
+    width: 5px;
+}
+
+.edit-dropdown button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 100%;
+    height: 40px;
+    min-height: 40px;
+    background-color: var(--main_color);
+    color: var(--white_color);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.edit-dropdown button:hover {
+    background-color: var(--hover_color);
+}
+
+.edit-dropdown button:active {
+    background-color: var(--clicked_color);
+}
+
+.edit-dropdown button:first-child {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.edit-dropdown button:last-child {
+    border-radius: 0px 0px 8px 8px;
+    margin-bottom: -1px;
+}
+
+/* 
+.user-input option {
+    height: 50px;
+    margin: 10px 0px;
+} */
+
+.pwd-change {
+    margin: 32.42px 0px 32px 0px;
+}
+
+.pswd {
+    display: flex;
+    align-items: center;
+}
+
+.pswd input {
+    border: none;
+    height: 50px;
+    flex-grow: 2;
+}
+
+.show-pwd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.edit-password {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.edit-profile .submit {
+    width: 569px;
+    height: 56px;
+    background-color: var(--main_color);
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--white_color);
+    cursor: pointer;
+}
+
+.edit-profile .submit:hover {
+    background-color: var(--hover_color);
+}
+
+.edit-profile .submit:active {
+    background-color: var(--clicked_color);
+}
+
+@media screen and (max-width: 576px) {
+
+    .edit-profile-page {
+        margin-left: 0;
+    }
+}

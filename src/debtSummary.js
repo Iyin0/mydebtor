@@ -1,10 +1,11 @@
+import SearchBar from "./searchBar";
 import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
-import SearchBar from "./searchBar";
 
-const Help = () => {
+
+const DebtSummary = () => {
 
     const toggleSideNavbar = useDispatch();
 
@@ -12,15 +13,14 @@ const Help = () => {
         toggleSideNavbar(toggleSideNav(false));
     }, [toggleSideNavbar])
 
-
     return (
         <div>
             <SideNavbar />
-            <main className="help">
+            <main className="debt-summary">
                 <SearchBar />
             </main>
         </div>
     );
 }
 
-export default Help;
+export default DebtSummary;

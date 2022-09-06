@@ -60,7 +60,7 @@ const Login = () => {
             schPwd.current.classList.remove('login-error');
             schEmail.current.classList.remove('login-error');
 
-            setTimeout(() => navigate('/'), 1000)
+            setTimeout(() => navigate('/dashboard'), 1000)
         }
     }
 
