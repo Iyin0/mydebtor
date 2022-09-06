@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mydebtor/static/css/main.817419cd.css",
-    "main.js": "/mydebtor/static/js/main.d097ea44.js",
+    "main.css": "/mydebtor/static/css/main.bec1a485.css",
+    "main.js": "/mydebtor/static/js/main.693bb790.js",
     "static/media/Group 115.png": "/mydebtor/static/media/Group 115.9ddd0d49fdb8a652271c.png",
     "static/media/unsplash_IrRbSND5EUc.png": "/mydebtor/static/media/unsplash_IrRbSND5EUc.25bd934fb4b375a23c8b.png",
     "static/media/Group 100.png": "/mydebtor/static/media/Group 100.e029c9891900b94cc05b.png",
@@ -16,6 +16,7 @@
     "static/media/png-transparent-british-international-school-in-cairo.png": "/mydebtor/static/media/png-transparent-british-international-school-in-cairo.79cb228943ad6fc584d6.png",
     "static/media/png-transparent-british-international-school-of-kuala.png": "/mydebtor/static/media/png-transparent-british-international-school-of-kuala.459dbf2dca8a0303a01a.png",
     "static/media/preloader 1.png": "/mydebtor/static/media/preloader 1.8eec8c3f87ab8bcfce1e.png",
+    "static/media/Ellipse 5.png": "/mydebtor/static/media/Ellipse 5.506ed7d6a090ba424f17.png",
     "static/media/Rectangle 68.png": "/mydebtor/static/media/Rectangle 68.258c030df6000b8b9d20.png",
     "static/media/cairo.png": "/mydebtor/static/media/cairo.119d2afd9455ed1b84d8.png",
     "static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.png": "/mydebtor/static/media/122-1224567_stafford-county-public-school-logo-best-logo-for 1.83a58be56483d634102e.png",
@@ -24,11 +25,11 @@
     "static/media/Rectangle 67.png": "/mydebtor/static/media/Rectangle 67.0ded82b4bef29c577e7c.png",
     "static/media/School-Badge.png": "/mydebtor/static/media/School-Badge.8f189a862c7fb06fe677.png",
     "index.html": "/mydebtor/index.html",
-    "main.817419cd.css.map": "/mydebtor/static/css/main.817419cd.css.map",
-    "main.d097ea44.js.map": "/mydebtor/static/js/main.d097ea44.js.map"
+    "main.bec1a485.css.map": "/mydebtor/static/css/main.bec1a485.css.map",
+    "main.693bb790.js.map": "/mydebtor/static/js/main.693bb790.js.map"
   },
   "entrypoints": [
-    "static/css/main.817419cd.css",
-    "static/js/main.d097ea44.js"
+    "static/css/main.bec1a485.css",
+    "static/js/main.693bb790.js"
   ]
 }
