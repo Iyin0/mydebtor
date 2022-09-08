@@ -112,7 +112,7 @@
 .edit-debtor {
     min-width: 104px;
     height: 35px;
-    border: none;
+    border: 2px solid var(--main_color);
     background-color: var(--main_color);
     border-radius: 8px;
     color: var(--white_color);
@@ -127,10 +127,13 @@
 
 .edit-debtor:hover {
     background-color: var(--hover_color);
+    border-color: var(--hover_color);
+
 }
 
 .edit-debtor:active {
     background-color: var(--clicked_color);
+    border-color: var(--clicked_color);
 }
 
 .mark-debtor {
@@ -161,7 +164,7 @@
 
 .delete-debtor {
     min-width: 136px;
-    height: 36px;
+    height: 35px;
     border: 2px solid var(--text_color);
     background-color: var(--white_color);
     border-radius: 8px;

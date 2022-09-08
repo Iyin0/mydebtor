@@ -75,7 +75,7 @@ const all_debtors = [
     {
         id: 7,
         name: "Miss Tompson Ebuka",
-        email: "Alexjoe2018@gmail.com",
+        email: "Tompsonebuka@gmail.com",
         gender: "Male",
         ward: "Jonathan Goodness",
         number: "+234-9045-3676-09",
