@@ -3,6 +3,7 @@ import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
+import './css/dashboard.css'
 
 const Dashboard = () => {
 
@@ -15,7 +16,7 @@ const Dashboard = () => {
     return (
         <div>
             <SideNavbar />
-            <main className="dashboard">
+            <main className="dashboard-page">
                 <SearchBar />
             </main>
         </div>

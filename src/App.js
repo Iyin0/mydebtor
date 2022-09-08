@@ -23,6 +23,7 @@ import EditProfile from './editProfile';
 import Dashboard from './dashboard';
 import CurrentDebtor from './currentDebtor';
 import DebtSummary from './debtSummary';
+import DebtorDetail from './debtorDetails';
 
 
 function App() {
@@ -47,13 +48,14 @@ function App() {
           <Route path="/t&c" element={<Terms />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/contend" element={<ContendEntry />} />
-          <Route path="/contend-debt" element={<ContendDebt />} />
+          <Route path="/contend-debt_:id" element={<ContendDebt />} />
           <Route path="/contend-upload" element={<ContendUpload />} />
           <Route path="/404" element={<ErrorPage />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/current-debtors" element={<CurrentDebtor />} />
+          <Route path="/current-debtors/debtor_:id" element={<DebtorDetail />} />
           <Route path="/debt-summary" element={<DebtSummary />} />
           <Route path="/help" element={<Help />} />
         </Routes>

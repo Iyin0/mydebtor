@@ -116,7 +116,7 @@ aside {
         flex-direction: row;
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.35);
-        z-index: 1;
+        z-index: 2;
     }
 
     .aside-container {
@@ -133,12 +133,5 @@ aside {
         background-color: rgba(134, 134, 134, 0.5);
         backdrop-filter: blur(5px);
     }
-
-    /* .hideNav button {
-        background-color: rgba(230, 213, 213, 0.8);
-        border: none;
-        margin-top: 100px;
-        cursor: pointer;
-    } */
 
 }

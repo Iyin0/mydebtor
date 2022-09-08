@@ -3,6 +3,7 @@ import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
+import './css/debtSummary.css'
 
 
 const DebtSummary = () => {
@@ -16,7 +17,7 @@ const DebtSummary = () => {
     return (
         <div>
             <SideNavbar />
-            <main className="debt-summary">
+            <main className="debt-summary-page">
                 <SearchBar />
             </main>
         </div>

@@ -12,7 +12,8 @@ const ContendEntry = () => {
     const [email, setEmail] = useState('')
     const [id, setId] = useState('')
     const defaultEmail = 'mydebtor@gmail.com';
-    const defaultId = 'FGC-GL-1021-27082022';
+    const [debtId, setDebtId] = useState(null);
+    const defaultId = `FEC-GL-${debtId}-27082022`;
 
     useEffect(() => {
         // 👇️ scroll to top on page load
@@ -30,7 +31,7 @@ const ContendEntry = () => {
             window.alert("Deault Email and ID are the placeholder")
         }
         else {
-            navigate('/contend-debt')
+            navigate(`/contend-debt_${debtId}`)
         }
     }
 
@@ -47,8 +48,8 @@ const ContendEntry = () => {
                             value={email} onChange={(e) => setEmail(e.target.value)}
                         />
                         <label htmlFor="" className="contend-label">Debt ID</label>
-                        <input type="text" placeholder="FGC-GL-1021-27082022" className="contend-input"
-                            value={id} onChange={(e) => setId(e.target.value)}
+                        <input type="text" placeholder="FEC-GL-1-27082022" className="contend-input"
+                            value={id} onChange={(e) => { setDebtId(e.target.value.split('-')[2]); setId(e.target.value) }}
                         />
                         <button className="submit-entry" onClick={(e) => { e.preventDefault(); contendLogin() }}>Submit</button>
                     </form>

@@ -19,22 +19,22 @@ const SideNavbar = () => {
 
         Array.from(ref.current.children).forEach((child) => {
 
-            if (location.pathname === '/dashboard') {
+            if (location.pathname.includes('dashboard')) {
                 if (child.id === "dashboard") {
                     child.classList.add("active")
                 }
             }
-            else if (location.pathname === '/edit-profile') {
+            else if (location.pathname.includes('edit-profile')) {
                 if (child.id === "profile") {
                     child.classList.add("active")
                 }
             }
-            else if (location.pathname === '/current-debtors') {
+            else if (location.pathname.includes('current-debtors')) {
                 if (child.id === "debtor") {
                     child.classList.add("active")
                 }
             }
-            else if (location.pathname === '/debt-summary') {
+            else if (location.pathname.includes('debt-summary')) {
                 if (child.id === "summary") {
                     child.classList.add("active")
                 }
@@ -43,7 +43,7 @@ const SideNavbar = () => {
 
         Array.from(btm_ref.current.children).forEach((child) => {
 
-            if (location.pathname === '/help') {
+            if (location.pathname.includes('help')) {
                 if (child.id === "help") {
                     child.classList.add("active")
                 }
