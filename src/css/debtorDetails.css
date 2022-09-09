@@ -207,7 +207,7 @@
 
 .edit-details-popup {
     background-color: var(--white_color);
-    width: 50%;
+    width: 70%;
     max-width: 681px;
     padding: 56px;
     border-radius: 8px;
@@ -274,7 +274,8 @@
     width: 100%;
 }
 
-.edit-details-input:focus {
+.edit-details-input:focus,
+.edit-desc-container textarea:focus {
     outline: none;
 }
 
