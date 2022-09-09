@@ -109,7 +109,7 @@
     margin: 32px 0px;
 }
 
-.edit-debtor {
+.edit-debtor-btn {
     min-width: 104px;
     height: 35px;
     border: 2px solid var(--main_color);
@@ -125,18 +125,18 @@
     padding: 8px 16px;
 }
 
-.edit-debtor:hover {
+.edit-debtor-btn:hover {
     background-color: var(--hover_color);
     border-color: var(--hover_color);
 
 }
 
-.edit-debtor:active {
+.edit-debtor-btn:active {
     background-color: var(--clicked_color);
     border-color: var(--clicked_color);
 }
 
-.mark-debtor {
+.mark-debtor-btn {
     min-width: 112px;
     height: 35px;
     border: 2px solid var(--main_color);
@@ -152,17 +152,17 @@
 }
 
 
-.mark-debtor:hover {
+.mark-debtor-btn:hover {
     color: var(--hover_color);
     border-color: var(--hover_color);
 }
 
-.mark-debtor:active {
+.mark-debtor-btn:active {
     color: var(--clicked_color);
     border-color: var(--clicked_color);
 }
 
-.delete-debtor {
+.delete-debtor-btn {
     min-width: 136px;
     height: 35px;
     border: 2px solid var(--text_color);
@@ -199,6 +199,111 @@
     margin: 0;
 }
 
+.edit-debtor-details {
+    overflow-y: scroll;
+    padding: 50px 0px;
+}
+
+.edit-details-popup {
+    background-color: var(--white_color);
+    width: 50%;
+    max-width: 681px;
+    padding: 56px;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.edit-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-details-header h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.edit-details-header button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.edit-details-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+.edit-input-container,
+.edit-desc-container {
+    width: 100%;
+    height: 54px;
+    border: 2px solid var(--text_color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 16px;
+}
+
+.edit-desc-container {
+    height: auto;
+}
+
+.edit-desc-container textarea {
+    height: 112px;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    resize: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.edit-details-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    width: 100%;
+}
+
+.edit-details-input:focus {
+    outline: none;
+}
+
+.edit-input-container svg {
+    transform: scale(0.22);
+    margin: -20px;
+    margin-bottom: -18px;
+}
+
+.edit-submit {
+    width: 100%;
+    height: 54px;
+    border: none;
+    background-color: var(--main_color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white_color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-submit:hover {
+    background-color: var(--hover_color);
+}
+
+.edit-submit:active {
+    background-color: var(--clicked_color);
+}
+
 @media screen and (max-width:576px) {
 
     .debtor-debtails-page {
@@ -212,6 +317,12 @@
     .debtor-detail {
         padding: 0px 16px 40px 16px;
         width: 100%;
+    }
+
+    .edit-details-popup {
+        width: 95%;
+        max-width: none;
+        padding: 24px;
     }
 
 }

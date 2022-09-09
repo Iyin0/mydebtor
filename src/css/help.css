@@ -14,3 +14,11 @@
     margin-left: var(--side_navbar_width);
     overflow-y: scroll;
 }
+
+
+@media screen and (max-width:576px) {
+
+    .help-page {
+        margin-left: 0;
+    }
+}
