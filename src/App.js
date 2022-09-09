@@ -50,7 +50,6 @@ function App() {
           <Route path="/contend" element={<ContendEntry />} />
           <Route path="/contend-debt_:id" element={<ContendDebt />} />
           <Route path="/contend-upload" element={<ContendUpload />} />
-          <Route path="/404" element={<ErrorPage />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/edit-profile" element={<EditProfile />} />
@@ -58,6 +57,7 @@ function App() {
           <Route path="/current-debtors/debtor_:id" element={<DebtorDetail />} />
           <Route path="/debt-summary" element={<DebtSummary />} />
           <Route path="/help" element={<Help />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </HashRouter>
