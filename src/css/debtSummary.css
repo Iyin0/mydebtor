@@ -15,9 +15,293 @@
     overflow-y: scroll;
 }
 
+.debt-summary {
+    padding: 0px 0px 80px 46px;
+}
+
+.debt-summary-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0px 73px;
+    width: 88%;
+}
+
+.toggle-summary {
+    border: 1px solid #85B3E1;
+    border-radius: 8px;
+    background-color: var(--white_color);
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.active-summary,
+.not-active-summary {
+    width: 125px;
+    height: 41px;
+    box-shadow: -4px 0px 8px rgba(119, 139, 165, 0.28);
+    border-radius: 8px;
+    background-color: var(--main_color);
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--white_color);
+}
+
+.not-active-summary {
+    color: #85B3E1;
+    background-color: var(--white_color);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.sort-summary {
+    background-color: var(--white_color);
+    border: none;
+    color: #85B3E1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    cursor: pointer;
+}
+
+.debt-summary-header {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #CEE0F3;
+    padding: 21px 40px;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #5C99D6;
+    margin-bottom: 24px;
+}
+
+.debt-summary-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3380CC;
+    margin: 0;
+}
+
+.header-name {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.header-amount {
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.header-date {
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.header-status {
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.debt-info {
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--white_color);
+    border: 1px solid #CEE0F3;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding-right: 45px;
+}
+
+.debt-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    flex-grow: 1;
+    /* flex-shrink: 2; */
+    max-width: 400px;
+}
+
+.debt-amount {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.debt-date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+.debt-status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
+
+.debtor-color-successful,
+.debtor-color-failed,
+.debtor-color-logged,
+.debtor-color-none {
+    height: 100%;
+    width: 4px;
+    border: none;
+    margin: 0px 28px 0px 8px;
+    background-color: #4ECA5A;
+
+}
+
+.debtor-color-failed {
+    background-color: var(--error_color);
+}
+
+.debtor-color-logged {
+    background-color: #E9CA26;
+}
+
+.debtor-color-none {
+    background-color: #a8a8a8;
+}
+
+.debt-summary-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.debtor-status-successful {
+    height: 30px;
+    padding: 4px 12px;
+    background-color: rgba(78, 202, 90, 0.25);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4ECA5A;
+}
+
+.debtor-status-failed {
+    height: 30px;
+    padding: 4px 12px;
+    background-color: rgba(255, 64, 64, 0.25);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF4040;
+}
+
+.debtor-status-logged {
+    height: 30px;
+    padding: 4px 12px;
+    background-color: rgba(233, 202, 38, 0.1);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #E9CA26;
+}
+
+.debtor-status-none {
+    height: 30px;
+    padding: 4px 12px;
+    background-color: #ECEBEB;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #A8A8A8;
+}
+
 @media screen and (max-width:576px) {
 
     .debt-summary-page {
         margin-left: 0;
+    }
+
+    .debt-summary {
+        padding: 0px 16px 40px 16px;
+    }
+
+    .debt-summary-top {
+        width: 100%;
+        margin: 24px 0px 40px;
+    }
+
+    .toggle-summary {
+        height: 37px;
+    }
+
+    .active-summary,
+    .not-active-summary {
+        width: 101px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .header-amount,
+    .header-date,
+    .debt-amount,
+    .debt-date {
+        display: none;
+    }
+
+    .debt-summary-header {
+        width: 90%;
+        height: 40px;
+        padding: 9px 16px;
+        margin-bottom: 16px;
+    }
+
+    .header-status,
+    .header-name {
+        flex-grow: 0;
+    }
+
+    .debt-name,
+    .debtor-status-successful,
+    .debtor-status-failed,
+    .debtor-status-logged,
+    .debtor-status-none,
+    .debt-summary-header p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .debt-info {
+        width: 90%;
+        height: 56px;
+        padding-right: 10px;
+    }
+
+    .debtor-color-successful,
+    .debtor-color-failed,
+    .debtor-color-logged,
+    .debtor-color-none {
+        width: 4px;
+        margin: 0px 8px 0px 4px;
     }
 }

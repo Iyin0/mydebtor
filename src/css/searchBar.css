@@ -15,7 +15,7 @@
 
 .search {
     display: flex;
-    width: 100%;
+    width: 88%;
     height: 56px;
     align-items: center;
 }
@@ -27,8 +27,8 @@
 .search-bar {
     display: flex;
     align-items: center;
-    width: 88%;
     /* max-width: 884px; */
+    flex-grow: 2;
     height: 100%;
     padding: 16px;
     border: 2px solid var(--search_bar_color);
@@ -70,8 +70,11 @@
         justify-content: space-between;
         width: 100%;
         height: 56px;
-        /* margin-top: -50px; */
         margin-bottom: 5px;
+    }
+
+    .search {
+        width: 100%;
     }
 
     .search-not {

@@ -24,6 +24,7 @@ import Dashboard from './dashboard';
 import CurrentDebtor from './currentDebtor';
 import DebtSummary from './debtSummary';
 import DebtorDetail from './debtorDetails';
+import AddDebtor from './addDebtor';
 
 
 function App() {
@@ -55,6 +56,7 @@ function App() {
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/current-debtors" element={<CurrentDebtor />} />
           <Route path="/current-debtors/debtor_:id" element={<DebtorDetail />} />
+          <Route path="/current-debtors/add-debtor" element={<AddDebtor />} />
           <Route path="/debt-summary" element={<DebtSummary />} />
           <Route path="/help" element={<Help />} />
           <Route path="*" element={<ErrorPage />} />

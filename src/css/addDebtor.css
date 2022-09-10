@@ -1,0 +1,127 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+    --error_color: #FF4040;
+}
+
+.add-new-debtor-page {
+    margin-left: var(--side_navbar_width);
+    overflow-y: scroll;
+}
+
+.add-new-debtor {
+    padding: 0px 0px 225px 46px;
+}
+
+
+.add-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-details-header h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.add-details-header button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.add-details-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.add-input-container,
+.add-desc-container {
+    width: 100%;
+    max-width: 569px;
+    height: 54px;
+    border: 2px solid #a8a8a8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.add-desc-container {
+    height: auto;
+}
+
+.add-desc-container textarea {
+    height: 112px;
+    width: 100%;
+    max-width: 569px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    resize: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.add-details-input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
+    width: 100%;
+}
+
+.add-details-input:focus,
+.add-desc-container textarea:focus {
+    outline: none;
+}
+
+.add-input-container svg {
+    transform: scale(0.22);
+    margin: -20px;
+    margin-bottom: -18px;
+}
+
+.add-submit {
+    width: 100%;
+    max-width: 569px;
+    height: 54px;
+    border: none;
+    background-color: var(--main_color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--white_color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-submit:hover {
+    background-color: var(--hover_color);
+}
+
+.add-submit:active {
+    background-color: var(--clicked_color);
+}
+
+@media screen and (max-width:576px) {
+
+    .add-new-debtor-page {
+        margin-left: 0;
+    }
+
+    .add-new-debtor {
+        padding: 0px 16px 53px 16px;
+    }
+}
