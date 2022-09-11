@@ -40,9 +40,16 @@ const DebtSummary = () => {
 
     }, [])
 
+    const defaultDropdown = () => {
+        if (resolvedDropdown === true || pendingDropdown === true) {
+            setPendingDropdown(false);
+            setResolvedDropdown(false)
+        }
+    }
+
 
     return (
-        <div>
+        <div onClick={() => defaultDropdown()}>
             <SideNavbar />
             <main className="debt-summary-page">
                 <SearchBar />
