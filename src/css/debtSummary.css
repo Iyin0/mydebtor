@@ -71,18 +71,25 @@
     cursor: pointer;
 }
 
+.debt-summary-header-container {
+    display: flex;
+    margin-bottom: 24px;
+    width: 88%;
+    height: 64px;
+}
+
 .debt-summary-header {
     display: flex;
-    width: 80%;
+    /* width: 81%; */
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    height: 64px;
+    height: 100%;
     background-color: #CEE0F3;
     padding: 21px 40px;
     border-width: 1px 0px;
     border-style: solid;
     border-color: #5C99D6;
-    margin-bottom: 24px;
 }
 
 .debt-summary-header p {
@@ -93,36 +100,52 @@
     margin: 0;
 }
 
+.debt-summary-blank {
+    width: 69px;
+    margin-left: 16px;
+}
+
 .header-name {
-    flex-grow: 1;
     max-width: 400px;
+    width: 40%;
 }
 
 .header-amount {
-    flex-grow: 1;
     max-width: 200px;
+    width: 20%;
 }
 
 .header-date {
-    flex-grow: 1;
     max-width: 200px;
+    width: 20%;
 }
 
 .header-status {
-    flex-grow: 1;
+    width: 20%;
     max-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.debt-info-container {
+    display: flex;
+    width: 88%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .debt-info {
-    width: 80%;
-    height: 80px;
+    /* width: 92%; */
+    flex-grow: 1;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-content: center;
     background-color: var(--white_color);
     border: 1px solid #CEE0F3;
     border-radius: 8px;
-    margin-bottom: 8px;
     padding-right: 45px;
 }
 
@@ -130,33 +153,40 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    flex-grow: 1;
-    /* flex-shrink: 2; */
     max-width: 400px;
+    width: 40%;
 }
 
 .debt-amount {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    flex-grow: 1;
+    width: 20%;
     max-width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.debt-amount svg {
+    transform: scale(0.25);
+    margin: -20px;
+    margin-bottom: -18px;
 }
 
 .debt-date {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
-    flex-grow: 1;
     max-width: 200px;
+    width: 20%;
 }
 
 .debt-status {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-grow: 1;
     max-width: 200px;
+    width: 20%;
 }
 
 
@@ -235,6 +265,88 @@
     color: #A8A8A8;
 }
 
+.view-summary-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 7%; */
+    width: 69px;
+    margin-left: 16px;
+}
+
+.summary-dropdown,
+.summary-dropdown-reverse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #CEE0F3;
+    box-shadow: 0px 4px 12px rgba(119, 139, 165, 0.2);
+    border-radius: 8px;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+/* .summary-dropdown-reverse {
+    background-color: #ADCCEB
+} */
+
+.summary-items {
+    position: absolute;
+    width: 595px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 24px 48px rgba(119, 139, 165, 0.25);
+    border-radius: 8px;
+    right: 9%;
+    margin-top: 430px;
+    z-index: 1;
+}
+
+.summary-items-none {
+    position: absolute;
+    width: 595px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 24px 48px rgba(119, 139, 165, 0.25);
+    border-radius: 8px;
+    right: 9%;
+    margin-top: 365px;
+    z-index: 1;
+}
+
+.summary-list-contaier {
+    width: 100%;
+    height: 100%;
+}
+
+.summary-list-contaier:first-child {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.summary-list-contaier:last-child {
+    border-radius: 0px 0px 8px 8px;
+    border-bottom: none;
+}
+
+.summary-list {
+    width: 100%;
+    border-bottom: 1px solid #CEE0F3;
+    padding: 8px 40px;
+}
+
+.summary-dropdown-label,
+.summary-dropdown-ans {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.summary-dropdown-label {
+    color: #ADCCEB
+}
+
 @media screen and (max-width:576px) {
 
     .debt-summary-page {
@@ -269,16 +381,27 @@
         display: none;
     }
 
-    .debt-summary-header {
-        width: 90%;
-        height: 40px;
-        padding: 9px 16px;
+    .debt-summary-header-container {
+        display: flex;
         margin-bottom: 16px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .debt-summary-header {
+        /* width: 85%; */
+        /* height: 40px; */
+        padding: 9px 16px;
+    }
+
+    .debt-summary-blank {
+        margin-left: 8px;
+        width: 48px;
     }
 
     .header-status,
     .header-name {
-        flex-grow: 0;
+        width: auto;
     }
 
     .debt-name,
@@ -291,10 +414,20 @@
         line-height: 19px;
     }
 
-    .debt-info {
-        width: 90%;
+    .debt-info-container {
+        display: flex;
+        width: 100%;
         height: 56px;
-        padding-right: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+
+    .debt-info {
+        /* width: 85%; */
+        height: 100%;
+        padding-right: 12px;
+        border-radius: 4px;
     }
 
     .debtor-color-successful,
@@ -303,5 +436,42 @@
     .debtor-color-none {
         width: 4px;
         margin: 0px 8px 0px 4px;
+    }
+
+    .view-summary-dropdown {
+        /* width: 15%; */
+        margin-left: 8px;
+        width: 48px;
+        border-radius: 4px;
+    }
+
+    .summary-items {
+        width: 340px;
+        background-color: #FEFEFE;
+        box-shadow: 0px 24px 48px rgba(119, 139, 165, 0.25);
+        border-radius: 8px;
+        right: 0;
+        margin-right: 16px;
+        margin-top: 330px;
+    }
+
+    .summary-items-none {
+        width: 340px;
+        background-color: #FEFEFE;
+        box-shadow: 0px 24px 48px rgba(119, 139, 165, 0.25);
+        border-radius: 8px;
+        right: 0;
+        margin-right: 16px;
+        margin-top: 285px;
+    }
+
+    .summary-list {
+        padding: 4px 16px;
+    }
+
+    .summary-dropdown-label,
+    .summary-dropdown-ans {
+        font-size: 14px;
+        line-height: 19px;
     }
 }

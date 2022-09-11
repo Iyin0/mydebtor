@@ -10,7 +10,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Successful"
+        status: "Successful",
+        class: "Basic Five (5)",
+        detail: "Contention Successful. Debt fully paid"
     },
 
     {
@@ -23,7 +25,9 @@ const all_debtors = [
         owes: "35,000",
         date: "27/08/2022",
         description: "Second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Failed"
+        status: "Failed",
+        class: "Basic Nine (9)",
+        detail: "Contention Failed. Documents provided does not cover this debt"
     },
 
     {
@@ -36,7 +40,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Logged"
+        status: "Logged",
+        class: "Basic Four (4)",
+        detail: "Logged"
     },
 
     {
@@ -49,7 +55,9 @@ const all_debtors = [
         owes: "170,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, hostel fees, with tax inclusive",
-        status: "None"
+        status: "None",
+        class: "Basic Five (5)",
+        detail: ""
     },
 
     {
@@ -62,7 +70,9 @@ const all_debtors = [
         owes: "170,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, hostel fees, with tax inclusive",
-        status: "Successful"
+        status: "Successful",
+        class: "Basic Seven (7)",
+        detail: "Contention Successful. Debt fully paid"
     },
 
     {
@@ -75,7 +85,9 @@ const all_debtors = [
         owes: "35,000",
         date: "27/08/2022",
         description: "First term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Failed"
+        status: "Failed",
+        class: "Basic Seven (7)",
+        detail: "Contention Failed. Documents provided does not cover this debt"
     },
 
     {
@@ -88,7 +100,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive ",
-        status: "Logged"
+        status: "Logged",
+        class: "Basic Three (3)",
+        detail: "Logged"
     },
 
     {
@@ -101,7 +115,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "None"
+        status: "None",
+        class: "Basic Seven (7)",
+        detail: ""
     },
 
     {
@@ -114,7 +130,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "Successful"
+        status: "Successful",
+        class: "Basic Three (3)",
+        detail: "Contention Successful. Debt fully paid"
     },
 
     {
@@ -127,7 +145,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "Failed"
+        status: "Failed",
+        class: "Basic Six (6)",
+        detail: "Contention Failed. Documents provided does not cover this debt"
     },
 
     {
@@ -140,7 +160,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Logged"
+        status: "Logged",
+        class: "Basic Two (2)",
+        detail: "Logged"
     },
 
     {
@@ -153,7 +175,9 @@ const all_debtors = [
         owes: "35,000",
         date: "27/08/2022",
         description: "Second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "None"
+        status: "None",
+        class: "Basic One (1)",
+        detail: ""
     },
 
     {
@@ -166,7 +190,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "Successful"
+        status: "Successful",
+        class: "Basic Six (6)",
+        detail: "Contention Successful. Debt fully paid"
     },
 
     {
@@ -179,7 +205,9 @@ const all_debtors = [
         owes: "170,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, hostel fees, with tax inclusive",
-        status: "Failed"
+        status: "Failed",
+        class: "Basic Eight (8)",
+        detail: "Contention Failed. Documents provided does not cover this debt"
     },
 
     {
@@ -192,7 +220,9 @@ const all_debtors = [
         owes: "170,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, hostel fees, with tax inclusive",
-        status: "Logged"
+        status: "Logged",
+        class: "Basic Six (6)",
+        detail: "Logged"
     },
 
     {
@@ -205,7 +235,9 @@ const all_debtors = [
         owes: "35,000",
         date: "27/08/2022",
         description: "First term outstanding feeding fees for 2019/2020 academic session, with tax inclusive",
-        status: "None"
+        status: "None",
+        class: "Basic Three (3)",
+        detail: ""
     },
 
     {
@@ -218,7 +250,9 @@ const all_debtors = [
         owes: "70,000",
         date: "27/08/2022",
         description: "First and second term outstanding feeding fees for 2019/2020 academic session, with tax inclusive ",
-        status: "Successful"
+        status: "Successful",
+        class: "Basic One (1)",
+        detail: "Contention Successful. Debt fully paid"
     },
 
     {
@@ -231,7 +265,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "Failed"
+        status: "Failed",
+        class: "Basic Two (2)",
+        detail: "Contention Failed. Documents provided does not cover this debt"
     },
 
     {
@@ -244,7 +280,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "Logged"
+        status: "Logged",
+        class: "Basic Nine (9)",
+        detail: "Logged"
     },
 
     {
@@ -257,7 +295,9 @@ const all_debtors = [
         owes: "25,000",
         date: "27/08/2022",
         description: "First and second term outstanding stationary and books fees for 2019/2020 academic session, with tax inclusive",
-        status: "None"
+        status: "None",
+        class: "Basic Four (4)",
+        detail: ""
     },
 
 ]
