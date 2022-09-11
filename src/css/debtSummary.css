@@ -275,6 +275,12 @@
     margin-left: 16px;
 }
 
+
+.view-summary-dropdown-clicked {
+    width: 69px;
+    height: 100%;
+}
+
 .summary-dropdown,
 .summary-dropdown-reverse {
     display: flex;
@@ -289,9 +295,9 @@
     cursor: pointer;
 }
 
-/* .summary-dropdown-reverse {
+.summary-dropdown-reverse {
     background-color: #ADCCEB
-} */
+}
 
 .summary-items {
     position: absolute;

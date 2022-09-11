@@ -14,8 +14,8 @@ const DebtSummary = () => {
     const [showResolved, setShowResolved] = useState(false);
     const [pendingDropdown, setPendingDropdown] = useState(false);
     const [resolvedDropdown, setResolvedDropdown] = useState(false);
-    const [resolvedClicked, setResolvedClicked] = useState(1);
-    const [pendingClicked, setPendingClicked] = useState(1);
+    const [resolvedClicked, setResolvedClicked] = useState();
+    const [pendingClicked, setPendingClicked] = useState();
 
     const toggleSideNavbar = useDispatch();
 
@@ -89,11 +89,29 @@ const DebtSummary = () => {
                                         </div>
                                     </div>
                                     <div className="view-summary-dropdown">
-                                        <button className="summary-dropdown" onClick={() => { setResolvedClicked(index); setResolvedDropdown(!resolvedDropdown); setPendingDropdown(false) }}>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
-                                        </button>
+                                        {resolvedDropdown ? (
+                                            <div className="view-summary-dropdown-clicked">
+                                                {index !== resolvedClicked ? (
+                                                    <button className="summary-dropdown" onClick={() => { setResolvedClicked(index); setResolvedDropdown(!resolvedDropdown); setPendingDropdown(false) }}>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                ) : (
+                                                    <button className="summary-dropdown-reverse" onClick={() => { setResolvedClicked(index); setResolvedDropdown(!resolvedDropdown); setPendingDropdown(false) }}>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19.92 15.0501L13.4 8.53014C12.63 7.76014 11.37 7.76014 10.6 8.53014L4.07996 15.0501" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                )}
+                                            </div>
+                                        ) : (
+                                            <button className="summary-dropdown" onClick={() => { setResolvedClicked(index); setResolvedDropdown(!resolvedDropdown); setPendingDropdown(false) }}>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </button>
+                                        )}
                                         {resolvedDropdown ? (
                                             <div className="summary-items">
                                                 {index === resolvedClicked ? (
@@ -114,12 +132,10 @@ const DebtSummary = () => {
                                                             <p className="summary-dropdown-label">Date of Entry :</p>
                                                             <p className="summary-dropdown-ans">{debtor.date}</p>
                                                         </div>
-                                                        {/* {debtor.detail !== "" ? ( */}
                                                         <div className="summary-list">
                                                             <p className="summary-dropdown-label">Contention Summary :</p>
                                                             <p className="summary-dropdown-ans">{debtor.detail}</p>
                                                         </div>
-                                                        {/* ) : (null)} */}
                                                     </div>
                                                 ) : (null)}
                                             </div>
@@ -149,11 +165,29 @@ const DebtSummary = () => {
                                         </div>
                                     </div>
                                     <div className="view-summary-dropdown">
-                                        <button className="summary-dropdown" onClick={() => { setPendingClicked(index); setPendingDropdown(!pendingDropdown); setResolvedDropdown(false) }}>
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                                            </svg>
-                                        </button>
+                                        {pendingDropdown ? (
+                                            <div className="view-summary-dropdown-clicked">
+                                                {index !== pendingClicked ? (
+                                                    <button className="summary-dropdown" onClick={() => { setPendingClicked(index); setPendingDropdown(!pendingDropdown); setResolvedDropdown(false) }}>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                ) : (
+                                                    <button className="summary-dropdown-reverse" onClick={() => { setPendingClicked(index); setPendingDropdown(!pendingDropdown); setResolvedDropdown(false) }}>
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M19.92 15.0501L13.4 8.53014C12.63 7.76014 11.37 7.76014 10.6 8.53014L4.07996 15.0501" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                )}
+                                            </div>
+                                        ) : (
+                                            <button className="summary-dropdown" onClick={() => { setPendingClicked(index); setPendingDropdown(!pendingDropdown); setResolvedDropdown(false) }}>
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M19.9201 8.9502L13.4001 15.4702C12.6301 16.2402 11.3701 16.2402 10.6001 15.4702L4.08008 8.9502" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </button>
+                                        )}
                                         {pendingDropdown ? (
                                             <div className={debtor.status === "None" ? "summary-items-none" : "summary-items"}>
                                                 {index === pendingClicked ? (
