@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mydebtor/static/css/main.1f865f5e.css",
-    "main.js": "/mydebtor/static/js/main.de170e9d.js",
+    "main.js": "/mydebtor/static/js/main.46d605d4.js",
     "static/media/Group 115.png": "/mydebtor/static/media/Group 115.9ddd0d49fdb8a652271c.png",
     "static/media/unsplash_IrRbSND5EUc.png": "/mydebtor/static/media/unsplash_IrRbSND5EUc.25bd934fb4b375a23c8b.png",
     "static/media/Group 100.png": "/mydebtor/static/media/Group 100.e029c9891900b94cc05b.png",
@@ -26,10 +26,10 @@
     "static/media/School-Badge.png": "/mydebtor/static/media/School-Badge.8f189a862c7fb06fe677.png",
     "index.html": "/mydebtor/index.html",
     "main.1f865f5e.css.map": "/mydebtor/static/css/main.1f865f5e.css.map",
-    "main.de170e9d.js.map": "/mydebtor/static/js/main.de170e9d.js.map"
+    "main.46d605d4.js.map": "/mydebtor/static/js/main.46d605d4.js.map"
   },
   "entrypoints": [
     "static/css/main.1f865f5e.css",
-    "static/js/main.de170e9d.js"
+    "static/js/main.46d605d4.js"
   ]
 }
