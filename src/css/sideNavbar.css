@@ -20,7 +20,7 @@ aside {
 .aside-container {
     height: 100vh;
     width: var(--side_navbar_width);
-    background-color: var(--main_color);
+    background-color: #0855A2;
     color: var(--white_color);
     display: flex;
     flex-direction: column;

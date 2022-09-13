@@ -16,6 +16,7 @@ const DebtSummary = () => {
     const [resolvedDropdown, setResolvedDropdown] = useState(false);
     const [resolvedClicked, setResolvedClicked] = useState();
     const [pendingClicked, setPendingClicked] = useState();
+    const [sort, setSort] = useState(true)
 
     const toggleSideNavbar = useDispatch();
 
@@ -45,6 +46,10 @@ const DebtSummary = () => {
             setPendingDropdown(false);
             setResolvedDropdown(false)
         }
+
+        if (sort === false) {
+            setSort(true)
+        }
     }
 
 
@@ -59,12 +64,21 @@ const DebtSummary = () => {
                             <button className={showResolved ? ("not-active-summary") : ("active-summary")} onClick={() => setShowResolved(false)}>Pending</button>
                             <button className={!showResolved ? ("not-active-summary") : ("active-summary")} onClick={() => setShowResolved(true)}>Resolved</button>
                         </div>
-                        <button className="sort-summary">
-                            Sort by
-                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9201 15.5501L13.4001 9.03014C12.6301 8.26014 11.3701 8.26014 10.6001 9.03014L4.08008 15.5501" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                        </button>
+                        <div className="sort-summary-container">
+                            <button className="sort-summary" onClick={() => setSort(!sort)}>
+                                Sort by
+                                <svg className={sort ? "reverse-sort-svg" : ""} width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.9201 15.5501L13.4001 9.03014C12.6301 8.26014 11.3701 8.26014 10.6001 9.03014L4.08008 15.5501" stroke="#5C99D6" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                            </button>
+                            {sort ? (null) : (
+                                <div className="sort-summary-dropdown">
+                                    <button className="sort-dropdown-item">Newest date first</button>
+                                    <button className="sort-dropdown-item">Oldest date first</button>
+                                    <button className="sort-dropdown-item">Name A to Z</button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                     <div className="debt-summary-header-container">
                         <div className="debt-summary-header">
