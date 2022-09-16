@@ -1,0 +1,223 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+    --error_color: #FF4040;
+}
+
+.school-debtors-page {
+    margin-left: var(--side_navbar_width);
+    overflow-y: scroll;
+}
+
+.school-debtors {
+    padding: 0px 0px 80px 46px;
+}
+
+.specific-school-header {
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.school-details h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.school-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 4px 0px 0px;
+    color: #a8a8a8;
+}
+
+.sort-debtors-btn {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    min-width: 100px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.sort-debtors-list {
+    display: flex;
+    flex-direction: column;
+    width: 187px;
+    background-color: #FEFEFE;
+    box-shadow: 16px 16px 32px rgba(119, 139, 165, 0.15);
+    border-radius: 8px;
+    position: absolute;
+    margin-left: -80px;
+    margin-top: 10px;
+}
+
+.sort-debtors-list button {
+    width: 100%;
+    height: 35px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #141414;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 0.5px solid #141414;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.sort-debtors-list button:hover {
+    background-color: var(--hover_color);
+    color: var(--white_color);
+}
+
+.sort-debtors-list button:active {
+    background-color: var(--clicked_color);
+    color: var(--white_color);
+}
+
+.sort-debtors-list button:first-child {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.sort-debtors-list button:last-child {
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+}
+
+.sort-debtors svg {
+    margin-left: 11px;
+}
+
+.sort-schools-debtor {
+    transform: rotateZ(180deg);
+}
+
+.school-debtors-header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+}
+
+.school-debtors-header p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0px 5px 0px 0px;
+}
+
+.school-debtors-header p:last-child {
+    color: #FEFEFE;
+    font-size: 2px;
+    line-height: 4px;
+    font-weight: 100;
+}
+
+.school-debtor-sn {
+    width: 10%;
+}
+
+.school-debtor-name {
+    width: 35%;
+}
+
+.school-debtor-class {
+    width: 20%;
+}
+
+.school-debtor-amount {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.school-debtor svg {
+    transform: scale(0.25);
+    margin: -20px;
+}
+
+.school-debtor-more {
+    width: 10%;
+    text-align: end;
+    text-decoration: none;
+}
+
+.school-debtor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: #FEFEFE;
+    border-bottom: 0.5px solid #292929;
+}
+
+.school-debtor p,
+.school-debtor a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3D3D3D;
+    margin: 0px 5px 0px 0px;
+}
+
+.school-debtor a {
+    color: var(--main_color);
+}
+
+@media screen and (max-width:576px) {
+    .school-debtors-page {
+        margin-left: 0;
+    }
+
+    .school-debtors {
+        padding: 0px 16px 40px 16px;
+    }
+
+    .specific-school-header {
+        width: 100%;
+    }
+
+    .school-debtors-header {
+        padding: 0;
+        padding: 14px 0px;
+    }
+
+
+    .school-debtor-sn {
+        width: 15%;
+    }
+
+    .school-debtor-name {
+        width: 40%;
+    }
+
+    .school-debtor-class {
+        width: 20%;
+    }
+
+    .school-debtor-more {
+        width: 22%;
+    }
+
+    .school-debtor-amount {
+        display: none;
+    }
+
+    .school-debtor {
+        padding: 8px 0px;
+    }
+}

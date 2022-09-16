@@ -12,7 +12,12 @@ const Help = () => {
 
     useEffect(() => {
         toggleSideNavbar(toggleSideNav(false));
-    }, [toggleSideNavbar])
+    }, [toggleSideNavbar]);
+
+    useEffect(() => {
+        // 👇️ scroll to top on page load
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
 
 
     return (
@@ -29,7 +34,7 @@ const Help = () => {
                                 <path d="M9.58317 17.4998C13.9554 17.4998 17.4998 13.9554 17.4998 9.58317C17.4998 5.21092 13.9554 1.6665 9.58317 1.6665C5.21092 1.6665 1.6665 5.21092 1.6665 9.58317C1.6665 13.9554 5.21092 17.4998 9.58317 17.4998Z" stroke="#0C0C0C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M18.3332 18.3332L16.6665 16.6665" stroke="#0C0C0C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <input type="text" placeholder="Search for common questions" value={question} onChange={(e) => setQuestion(e.target.value)} />
+                            <input type="search" name="q" placeholder="Search for common questions" value={question} onChange={(e) => setQuestion(e.target.value)} />
                         </div>
                     </div>
                     <div className="help-middle">

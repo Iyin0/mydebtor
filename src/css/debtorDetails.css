@@ -14,6 +14,13 @@
 .display-current-page {
     padding: 32px 0px 32px 46px;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.display-current-page a,
+.display-current-page p {
+    margin: 5px 0px;
 }
 
 .current-page,
@@ -24,13 +31,16 @@
     color: var(--main_color);
     text-decoration: none;
     margin: 0;
+    white-space: nowrap;
 }
 
 .not-current-page {
     color: #A8A8A8;
 }
 
-.display-current-page svg {
+.page-svg-arrow {
+    width: 24px;
+    height: 24px;
     margin: 0px 5px;
 }
 
@@ -178,6 +188,10 @@
     padding: 8px 16px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.school-list-debtor-detail {
+    margin-top: 64px;
 }
 
 .debtor-label {

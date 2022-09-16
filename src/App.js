@@ -25,6 +25,9 @@ import CurrentDebtor from './currentDebtor';
 import DebtSummary from './debtSummary';
 import DebtorDetail from './debtorDetails';
 import AddDebtor from './addDebtor';
+import SchoolList from './schoolList';
+import SchoolDebtors from './schoolDebtors';
+import SchoolDebtorDetails from './schoolDebtorDetails';
 
 
 function App() {
@@ -53,6 +56,9 @@ function App() {
           <Route path="/contend-upload" element={<ContendUpload />} />
 
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/schools" element={<SchoolList />} />
+          <Route path="/dashboard/schools/:schoolId&:id" element={<SchoolDebtors />} />
+          <Route path="/dashboard/schools/:schoolId&:id/:debtorId" element={<SchoolDebtorDetails />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/current-debtors" element={<CurrentDebtor />} />
           <Route path="/current-debtors/debtor_:id" element={<DebtorDetail />} />
