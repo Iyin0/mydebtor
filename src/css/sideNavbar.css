@@ -15,6 +15,7 @@ aside {
     /* flex-direction: column; */
     justify-content: space-between;
     position: fixed;
+    overflow: none;
 }
 
 .aside-container {
@@ -78,7 +79,7 @@ aside {
 
 .aside-bottom {
     width: 100%;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .aside-bottom a {
