@@ -28,6 +28,8 @@ import AddDebtor from './addDebtor';
 import SchoolList from './schoolList';
 import SchoolDebtors from './schoolDebtors';
 import SchoolDebtorDetails from './schoolDebtorDetails';
+import Feeds from './feeds';
+import FeedDetail from './feedDetail';
 
 
 function App() {
@@ -59,6 +61,8 @@ function App() {
           <Route path="/dashboard/schools" element={<SchoolList />} />
           <Route path="/dashboard/schools/:schoolId&:id" element={<SchoolDebtors />} />
           <Route path="/dashboard/schools/:schoolId&:id/:debtorId" element={<SchoolDebtorDetails />} />
+          <Route path="/dashboard/feed" element={<Feeds />} />
+          <Route path="/dashboard/feed/:schoolId&:postId" element={<FeedDetail />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/current-debtors" element={<CurrentDebtor />} />
           <Route path="/current-debtors/debtor_:id" element={<DebtorDetail />} />

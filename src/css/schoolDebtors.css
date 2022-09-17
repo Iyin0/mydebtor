@@ -25,6 +25,18 @@
     justify-content: space-between;
 }
 
+.school-details {
+    display: flex;
+    align-items: center;
+}
+
+.school-details img {
+    width: 100px;
+    height: 100px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
 .school-details h1 {
     font-weight: 600;
     font-size: 24px;
@@ -191,9 +203,18 @@
         width: 100%;
     }
 
+    .school-details img {
+        width: 80px;
+        height: 80px;
+    }
+
     .school-debtors-header {
         padding: 0;
         padding: 14px 0px;
+    }
+
+    .sort-debtors {
+        margin-left: 20px;
     }
 
 

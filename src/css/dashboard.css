@@ -16,12 +16,14 @@
 }
 
 .dashboard,
-.all-schools {
+.all-schools,
+.all-feeds {
     padding: 0px 0px 80px 46px;
 }
 
 .school-list,
-.all-schools {
+.all-schools,
+.all-feeds {
     width: 88%;
 }
 
@@ -96,6 +98,106 @@
     padding: 16px;
 }
 
+.feeds {
+    width: 88%;
+}
+
+.feeds h1,
+.all-feeds h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 32px 0px 16px;
+}
+
+.all-feeds h1 {
+    margin-top: 0;
+}
+
+.feed {
+    width: 100%;
+    height: auto;
+    padding: 32px;
+    background-color: #FEFEFE;
+    border: 0.5px solid #A8A8A8;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.feed-header {
+    display: flex;
+}
+
+.feed-school-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.feed-name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.feed-location {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A8A8A8;
+    margin: 0;
+}
+
+.feed-body {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+    margin: 16px 0px;
+}
+
+.feed-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed-iteraction {
+    display: flex;
+}
+
+.feed-iteraction button {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.feed-iteraction button svg {
+    margin-right: 6px;
+}
+
+.feed-timstamp {
+    text-align: end;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A8A8A8;
+    flex-grow: 1;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -104,12 +206,14 @@
     }
 
     .dashboard,
-    .all-schools {
+    .all-schools,
+    .all-feeds {
         padding: 0px 16px 40px 16px;
     }
 
     .school-list,
-    .all-schools {
+    .all-schools,
+    .all-feeds {
         width: 100%;
     }
 
@@ -128,5 +232,25 @@
     .list-school-location,
     .schools-header {
         display: none;
+    }
+
+    .feeds,
+    .all-feeds {
+        width: 100%;
+    }
+
+    .feeds,
+    .all-feeds h1 {
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .feed {
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    .feed-body {
+        -webkit-line-clamp: 8;
     }
 }

@@ -1,0 +1,79 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+    --error_color: #FF4040;
+}
+
+.feed-detail-page {
+    margin-left: var(--side_navbar_width);
+    overflow-y: scroll;
+}
+
+.feed-detail {
+    padding: 0px 0px 80px 46px;
+}
+
+.feed-detail h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.feed-detail-display {
+    width: 88%;
+    border: 0.5px solid #0C0C0C;
+    border-radius: 8px;
+    padding: 32px;
+    margin: 32px 0px;
+}
+
+.feed-comments {
+    margin-top: 32px;
+    border-top: 0.5px solid #0C0C0C;
+}
+
+.feed-comments h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.post-comment {
+    display: flex;
+    margin: 16px 0px;
+}
+
+.comment-school-pic {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+    border-radius: 50%;
+}
+
+.feed-comment-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:576px) {
+    .feed-detail-page {
+        margin-left: 0;
+    }
+
+    .feed-detail {
+        padding: 0px 16px 40px 16px;
+    }
+
+    .feed-detail-display {
+        width: 100%;
+    }
+
+}

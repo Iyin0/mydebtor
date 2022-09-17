@@ -3,10 +3,11 @@ const school_debtors = [
     {
         id: 1,
         name: "First Example School",
-        lga: "Isolo",
+        lga: "Oshodi-Isolo",
         state: "Lagos",
-        school_id: "FES-IL",
+        school_id: "FES-OL",
         school_email: "firstexampleschool@gmail.com",
+        image: require("./img/Ellipse 5.png"),
         debtors: [
             {
                 id: 1,
@@ -317,6 +318,7 @@ const school_debtors = [
         state: "FCT-Abuja",
         school_id: "SES-FCTA",
         school_email: "secondexampleschool@gmail.com",
+        image: require("./img/cairo.png"),
         debtors: [
             {
                 id: 1,
@@ -627,6 +629,7 @@ const school_debtors = [
         state: "Bayelsa",
         school_id: "TES-NB",
         school_email: "thirdexampleschool@gmail.com",
+        image: require("./img/cropped-School-Badge 1.png"),
         debtors: [
             {
                 id: 1,
@@ -937,6 +940,7 @@ const school_debtors = [
         state: "Bauchi",
         school_id: "FES-BB",
         school_email: "fourthexampleschool@gmail.com",
+        image: require("./img/122-1224567_stafford-county-public-school-logo-best-logo-for 1.png"),
         debtors: [
             {
                 id: 1,
@@ -1247,6 +1251,7 @@ const school_debtors = [
         state: "Kwara",
         school_id: "FES-OK",
         school_email: "fifthexampleschool@gmail.com",
+        image: require("./img/Ellipse 6.png"),
         debtors: [
             {
                 id: 1,
@@ -1557,6 +1562,7 @@ const school_debtors = [
         state: "Kwara",
         school_id: "SES-IK",
         school_email: "sixthexampleschool@gmail.com",
+        image: require("./img/kuala.png"),
         debtors: [
             {
                 id: 1,
@@ -1867,6 +1873,7 @@ const school_debtors = [
         state: "Ogun",
         school_id: "SES-AO",
         school_email: "seventhexampleschool@gmail.com",
+        image: require("./img/OakfieldLogo 1.png"),
         debtors: [
             {
                 id: 1,
@@ -2177,6 +2184,7 @@ const school_debtors = [
         state: "Oyo",
         school_id: "EES-AO",
         school_email: "eighthexampleschool@gmail.com",
+        image: require("./img/png-transparent-british-international-school-in-cairo.png"),
         debtors: [
             {
                 id: 1,
@@ -2487,6 +2495,7 @@ const school_debtors = [
         state: "Oyo",
         school_id: "NES-EO",
         school_email: "ninthexampleschool@gmail.com",
+        image: require("./img/png-transparent-british-international-school-of-kuala.png"),
         debtors: [
             {
                 id: 1,
@@ -2797,6 +2806,7 @@ const school_debtors = [
         state: "Rivers",
         school_id: "TES-AR",
         school_email: "tenthexampleschool@gmail.com",
+        image: require("./img/preload.png"),
         debtors: [
             {
                 id: 1,
@@ -3107,6 +3117,7 @@ const school_debtors = [
         state: "Niger",
         school_id: "EES-BN",
         school_email: "eleventhexampleschool@gmail.com",
+        image: require("./img/preloader 1.png"),
         debtors: [
             {
                 id: 1,
@@ -3417,6 +3428,7 @@ const school_debtors = [
         state: "Kaduna",
         school_id: "TES-SK",
         school_email: "twelvethexampleschool@gmail.com",
+        image: require("./img/Rectangle 67.png"),
         debtors: [
             {
                 id: 1,
@@ -3727,6 +3739,8 @@ const school_debtors = [
         state: "Kebbi",
         school_id: "TES-JK",
         school_email: "thirteenthexampleschool@gmail.com",
+        time: "2:15 pm",
+        image: require("./img/Rectangle 68.png"),
         debtors: [
             {
                 id: 1,
@@ -4037,6 +4051,7 @@ const school_debtors = [
         state: "Adamawa",
         school_id: "FES-IL",
         school_email: "fourteenthexampleschool@gmail.com",
+        image: require("./img/School_Logo_1 1.png"),
         debtors: [
             {
                 id: 1,
@@ -4347,6 +4362,7 @@ const school_debtors = [
         state: "Anambra",
         school_id: "FES-OA",
         school_email: "fifteenthexampleschool@gmail.com",
+        image: require("./img/School-Badge.png"),
         debtors: [
             {
                 id: 1,
@@ -4657,6 +4673,7 @@ const school_debtors = [
         state: "Enugu",
         school_id: "SES-NE",
         school_email: "sisteenthexampleschool@gmail.com",
+        image: require("./img/stafford-county-public-school.png"),
         debtors: [
             {
                 id: 1,
@@ -4967,6 +4984,7 @@ const school_debtors = [
         state: "FCT-Abuja",
         school_id: "SES-FCTA",
         school_email: "seventeenthexampleschool@gmail.com",
+        image: require("./img/Rectangle 67.png"),
         debtors: [
             {
                 id: 1,
@@ -5277,6 +5295,7 @@ const school_debtors = [
         state: "FCT-Abuja",
         school_id: "EES-FCTA",
         school_email: "eighteenthexampleschool@gmail.com",
+        image: require("./img/cairo.png"),
         debtors: [
             {
                 id: 1,
@@ -5587,6 +5606,7 @@ const school_debtors = [
         state: "FCT-Abuja",
         school_id: "NES-FCTA",
         school_email: "nineteenthexampleschool@gmail.com",
+        image: require("./img/preloader 1.png"),
         debtors: [
             {
                 id: 1,
@@ -5893,10 +5913,11 @@ const school_debtors = [
     {
         id: 20,
         name: "Twentieth Example School",
-        lga: "Isolo",
+        lga: "Ikeja",
         state: "Lagos",
         school_id: "TES-IL",
         school_email: "twentiethexampleschool@gmail.com",
+        image: require("./img/OakfieldLogo 1.png"),
         debtors: [
             {
                 id: 1,

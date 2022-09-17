@@ -46,9 +46,11 @@ const SchoolDebtors = () => {
                 <div className="school-debtors">
                     <div className="specific-school-header">
                         <div className="school-details">
-                            <h1>{school_info.name}</h1>
-                            <p>{school_info.lga}, {school_info.state}</p>
-                            {/* <p>{school_info.school_email}</p> */}
+                            <img src={school_info.image} alt="" />
+                            <div className="specific-school-info">
+                                <h1>{school_info.name}</h1>
+                                <p>{school_info.lga}, {school_info.state}</p>
+                            </div>
                         </div>
                         <div className="sort-debtors">
                             <button className="sort-debtors-btn" onClick={() => setSort(!sort)}>
