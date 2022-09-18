@@ -31,6 +31,7 @@ import SchoolDebtorDetails from './schoolDebtorDetails';
 import Feeds from './feeds';
 import FeedDetail from './feedDetail';
 import { useSelector } from 'react-redux';
+import Notification from './notification';
 
 
 function App() {
@@ -42,7 +43,6 @@ function App() {
       <div className="App">
         {login ? (
           <Routes>
-            <Route path="/" element={<Dashboard />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/dashboard/schools" element={<SchoolList />} />
             <Route path="/dashboard/schools/:schoolId&:id" element={<SchoolDebtors />} />
@@ -55,6 +55,7 @@ function App() {
             <Route path="/current-debtors/add-debtor" element={<AddDebtor />} />
             <Route path="/debt-summary" element={<DebtSummary />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/notification" element={<Notification />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
         ) : (

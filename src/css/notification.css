@@ -1,0 +1,121 @@
+:root {
+    --main_color: #0A66C2;
+    --text_color: #292929;
+    --white_color: #ffffff;
+    --hover_color: #3380cc;
+    --clicked_color: #074481;
+    --disabled_color: #a8a8a8;
+    --side_navbar_width: 332px;
+    --search_bar_color: #D2D2D2;
+    --error_color: #FF4040;
+}
+
+.notification-page {
+    margin-left: var(--side_navbar_width);
+    overflow-y: scroll;
+}
+
+.notificaton {
+    padding: 0px 0px 80px 46px;
+}
+
+.notificaton h1 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.notifications-container {
+    width: 88%;
+}
+
+.notification-header {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 12px 0px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 82px;
+    background-color: #FDFDFD;
+    border-bottom: 1px solid #ECEBEB;
+    padding: 8px;
+    margin-bottom: 6px;
+}
+
+.notification-img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.notification-info {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.notification-action {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.notification-time {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #7E7E7E;
+    margin: 8px 0px 0px;
+}
+
+.more-notifications {
+    padding: 16px 32px;
+    background: transparent;
+    margin-top: 20px;
+    color: var(--main_color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:576px) {
+    .notification-page {
+        margin-left: 0;
+    }
+
+    .notificaton {
+        padding: 0px 16px 40px 16px;
+    }
+
+    .notifications-container {
+        width: 100%;
+    }
+
+    .notification-item {
+        display: flex;
+        align-items: center;
+        height: 110px;
+        padding: 8px;
+        margin-bottom: 6px;
+    }
+
+}
