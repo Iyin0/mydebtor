@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
+import { userLogin } from './store/loginState';
 import './css/login.css';
 
 const Login = () => {
@@ -17,6 +18,7 @@ const Login = () => {
     const navigate = useNavigate();
     const schEmail = useRef();
     const schPwd = useRef();
+    const dispatch = useDispatch();
 
     // const addSignupDetails = useDispatch();
     const email = 'mydebtor@gmail.com';
@@ -60,7 +62,7 @@ const Login = () => {
             schPwd.current.classList.remove('login-error');
             schEmail.current.classList.remove('login-error');
 
-            setTimeout(() => navigate('/dashboard'), 1000)
+            setTimeout(() => { dispatch(userLogin()); navigate('/dashboard') }, 1000)
         }
     }
 

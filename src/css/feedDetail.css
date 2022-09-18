@@ -34,6 +34,15 @@
     margin: 32px 0px;
 }
 
+.feed-detail-body {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+    margin: 16px 0px;
+}
+
 .feed-comments {
     margin-top: 32px;
     border-top: 0.5px solid #0C0C0C;
@@ -47,7 +56,8 @@
 
 .post-comment {
     display: flex;
-    margin: 16px 0px;
+    flex-direction: column;
+    margin: 32px 0px;
 }
 
 .comment-school-pic {
@@ -57,11 +67,6 @@
     border-radius: 50%;
 }
 
-.feed-comment-section {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
 
 @media screen and (max-width:576px) {
     .feed-detail-page {
@@ -76,4 +81,9 @@
         width: 100%;
     }
 
+    .comment-school-pic {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
 }

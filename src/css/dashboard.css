@@ -18,7 +18,7 @@
 .dashboard,
 .all-schools,
 .all-feeds {
-    padding: 0px 0px 80px 46px;
+    padding: 0px 0px 150px 46px;
 }
 
 .school-list,
@@ -190,12 +190,22 @@
 }
 
 .feed-timstamp {
+    /* flex-grow: 1; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+}
+
+.feed-timstamp p {
     text-align: end;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #A8A8A8;
     flex-grow: 1;
+    white-space: nowrap;
+    margin: 0;
+    margin-left: 8px;
 }
 
 
@@ -208,7 +218,7 @@
     .dashboard,
     .all-schools,
     .all-feeds {
-        padding: 0px 16px 40px 16px;
+        padding: 0px 16px 150px 16px;
     }
 
     .school-list,

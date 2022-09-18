@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import './css/sideNavbar.css'
 import { toggleSideNav } from "./store/landingDropdown";
+import { userLogout } from "./store/loginState";
 
 const SideNavbar = () => {
 
@@ -188,7 +189,7 @@ const SideNavbar = () => {
                         </svg>
                         Help & support
                     </Link>
-                    <Link to="/">
+                    <Link to="/" onClick={() => toggleSideNavbar(userLogout())}>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4399 14.62L19.9999 12.06L17.4399 9.5" stroke="#FEFEFE" strokeWidth="1.5"
                                 strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
