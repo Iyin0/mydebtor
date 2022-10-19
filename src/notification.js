@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
 import './css/notification.css';
-import { Link } from "react-router-dom";
 
 const Notification = () => {
 
