@@ -1,5 +1,3 @@
-import TopNavbar from "./topNavbar";
-import Footer from "./footer";
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
@@ -61,7 +59,6 @@ const Contact = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="contact" onClick={() => hideTopNav()}>
                 <div className="contact-socials">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +148,6 @@ const Contact = () => {
                     </div>
                 ) : (null)}
             </main>
-            <Footer />
         </div>
     );
 }

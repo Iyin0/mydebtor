@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/contendEntry.css'
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -31,14 +29,13 @@ const ContendEntry = () => {
             window.alert("Deault Email and ID are the placeholder")
         }
         else {
-            navigate(`/contend-debt_${debtId}`)
+            navigate(`/contend/${debtId}`)
         }
     }
 
 
     return (
         <div>
-            <TopNavbar />
             <main className="contend-entry" onClick={() => hideTopNav()}>
                 <div className="contend-entry-card">
                     <h1 className="contend-entry-head">Input your debt details</h1>
@@ -55,7 +52,6 @@ const ContendEntry = () => {
                     </form>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

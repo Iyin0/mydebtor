@@ -1,5 +1,3 @@
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/contendUpload.css'
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -50,7 +48,6 @@ const ContendUpload = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="contend-upload" onClick={() => hideTopNav()}>
                 <div className="file-upload">
                     <h1>File Upload</h1>
@@ -219,7 +216,6 @@ const ContendUpload = () => {
                     </div>
                 ) : (null)}
             </main>
-            <Footer />
         </div>
     );
 }

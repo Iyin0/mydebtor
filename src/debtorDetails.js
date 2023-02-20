@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -34,9 +32,7 @@ const DebtorDetail = () => {
 
     return (
         <div>
-            <SideNavbar />
             <div className="debtor-debtails-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/current-debtors' className="not-current-page">Current debtors</Link>
                     <div className="page-svg-arrow">

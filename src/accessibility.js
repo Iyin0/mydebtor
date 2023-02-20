@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import { useDispatch } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
 import './css/accessibility.css'
@@ -20,7 +18,6 @@ const Accessibility = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="accessibility" onClick={() => hideTopNav()}>
                 <h1>Accessibility Statement for My Debtor</h1>
                 <p className="body">
@@ -64,7 +61,6 @@ const Accessibility = () => {
                 </div>
                 <p className="accessibitily-create">This statement was created on 27th July, 2022</p>
             </main>
-            <Footer />
         </div>
     );
 }

@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -23,9 +21,7 @@ const SchoolList = () => {
 
     return (
         <div>
-            <SideNavbar />
             <main className="dashboard-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/dashboard' className="not-current-page">Home</Link>
                     <div className="page-svg-arrow">
@@ -46,7 +42,7 @@ const SchoolList = () => {
                         <div className="school" key={index}>
                             <p className="list-school-name">{school.name}</p>
                             <p className="list-school-location">{school.lga}, {school.state}</p>
-                            <Link to={`/dashboard/schools/${school.school_id}&${school.id}`}>View details</Link>
+                            <Link to={`/dashboard/schools/${school.school_id}/${school.id}`}>View details</Link>
                         </div>
                     ))}
                 </div>

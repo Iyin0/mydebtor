@@ -1,5 +1,3 @@
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/terms.css';
 import { Link } from "react-router-dom";
 import React, { useEffect, useRef } from "react";
@@ -116,7 +114,6 @@ const Terms = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="terms" onClick={() => hideTopNav()}>
                 <div className="side-panel">
                     <div className="links" id="links">
@@ -138,7 +135,6 @@ const Terms = () => {
                     <p className="body" >Don't worry, we never sell or rent your personal information. Opt-out anytime.</p>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

@@ -1,6 +1,4 @@
 import { useEffect } from "react";
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import { Link } from "react-router-dom";
 import './css/faq.css'
 
@@ -13,7 +11,6 @@ const FAQ = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="faq">
                 <h1 className="faq-text1">Frequently asked questions</h1>
                 <p className="faq-text2">You have any questions? We are here to help.</p>
@@ -78,7 +75,6 @@ const FAQ = () => {
                 </div>
                 <p className="to-contact-us">Still have questions? <span className="faq-chat">Please <Link to='/contact-us'>chat</Link> with our friendly team</span></p>
             </main>
-            <Footer />
         </div>
     );
 }

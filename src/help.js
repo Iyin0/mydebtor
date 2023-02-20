@@ -1,8 +1,6 @@
-import SideNavbar from "./sideNavbar";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
-import SearchBar from "./searchBar";
 import './css/help.css'
 
 const Help = () => {
@@ -22,9 +20,7 @@ const Help = () => {
 
     return (
         <div>
-            <SideNavbar />
             <main className="help-page">
-                <SearchBar />
                 <div className="help">
                     <div className="help-top">
                         <h1>Welcome! to the Help Center</h1>

@@ -1,5 +1,3 @@
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/contendDebt.css';
 import { useDispatch } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
@@ -30,7 +28,6 @@ const ContendDebt = () => {
 
     return (
         <div>
-            <TopNavbar />
             {/* onclick="hideTopNav()" */}
             <main className="contend-debt" onClick={() => hideTopNav()}>
                 <div className="debtor-details">
@@ -95,7 +92,6 @@ const ContendDebt = () => {
                     </div>
                 ) : (null)}
             </main>
-            <Footer />
         </div>
     );
 }

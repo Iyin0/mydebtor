@@ -1,7 +1,4 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect, useState } from "react";
-// import { all_debtors } from "./allDebtors";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
 import './css/addDebtor.css'
@@ -29,9 +26,7 @@ const AddDebtor = () => {
 
     return (
         <div>
-            <SideNavbar />
             <div className="add-new-debtor-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/current-debtors' className="not-current-page">Current debtors</Link>
                     <div className="page-svg-arrow">

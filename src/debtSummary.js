@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -55,9 +53,7 @@ const DebtSummary = () => {
 
     return (
         <div onClick={() => defaultDropdown()}>
-            <SideNavbar />
             <main className="debt-summary-page">
-                <SearchBar />
                 <div className="debt-summary">
                     <div className="debt-summary-top">
                         <div className="toggle-summary">

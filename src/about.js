@@ -1,5 +1,3 @@
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/about.css'
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -23,7 +21,6 @@ const About = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="about" onClick={() => hideTopNav()} >
                 <div className="about-first">
                     <div className="about-first-left">
@@ -124,7 +121,6 @@ const About = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -29,9 +27,7 @@ const SchoolDebtorDetails = () => {
 
     return (
         <div>
-            <SideNavbar />
             <div className="debtor-debtails-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/dashboard' className="not-current-page">Home</Link>
                     <div className="page-svg-arrow">
@@ -43,7 +39,7 @@ const SchoolDebtorDetails = () => {
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.9502 4.07992L15.4702 10.5999C16.2402 11.3699 16.2402 12.6299 15.4702 13.3999L8.9502 19.9199" stroke="#A8A8A8" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                    <Link to={`/dashboard/schools/${sch.schoolId}&${sch.id}`} className="not-current-page">{school_info.name}</Link>
+                    <Link to={`/dashboard/schools/${sch.schoolId}/${sch.id}`} className="not-current-page">{school_info.name}</Link>
                     <div className="page-svg-arrow">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M8.9502 4.07992L15.4702 10.5999C16.2402 11.3699 16.2402 12.6299 15.4702 13.3999L8.9502 19.9199" stroke="#A8A8A8" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />

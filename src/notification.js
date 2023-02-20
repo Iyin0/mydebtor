@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -20,9 +18,7 @@ const Notification = () => {
 
     return (
         <div>
-            <SideNavbar />
             <main className="notification-page">
-                <SearchBar />
                 <div className="notificaton">
                     <h1>Notifications</h1>
                     <div className="notifications-container">

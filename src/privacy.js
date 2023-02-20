@@ -1,6 +1,4 @@
 import { useEffect, useRef } from "react";
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import { useDispatch } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
 import { Link } from "react-router-dom";
@@ -206,7 +204,6 @@ const Privacy = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="terms" onClick={() => hideTopNav()}>
                 <div className="side-panel">
                     <div className="links" id="links">
@@ -227,7 +224,6 @@ const Privacy = () => {
                     ))}
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

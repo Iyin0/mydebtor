@@ -19,6 +19,7 @@ const SideNavbar = () => {
     useEffect(() => {
 
         Array.from(ref.current.children).forEach((child) => {
+            child.classList.remove("active")
 
             if (location.pathname.includes('dashboard')) {
                 if (child.id === "dashboard") {

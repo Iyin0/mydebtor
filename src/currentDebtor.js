@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -24,9 +22,7 @@ const CurrentDebtor = () => {
 
     return (
         <div>
-            <SideNavbar />
             <div className="current-debtor-page">
-                <SearchBar />
                 <div className="current-debtor">
                     <h1>Current Debtors</h1>
                     {all_debtors.map((debtor, index) => (

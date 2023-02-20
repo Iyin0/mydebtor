@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -23,9 +21,7 @@ const Feeds = () => {
 
     return (
         <div>
-            <SideNavbar />
             <main className="dashboard-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/dashboard' className="not-current-page">Home</Link>
                     <div className="page-svg-arrow">
@@ -38,7 +34,7 @@ const Feeds = () => {
                 <div className="all-feeds">
                     <h1>Feed</h1>
                     {posts.map((feed, index) => (
-                        <div className="feed" key={index} onClick={() => navigate(`/dashboard/feed/${feed.school_id}&${feed.id}`)}>
+                        <div className="feed" key={index} onClick={() => navigate(`/dashboard/feed/${feed.school_id}/${feed.id}`)}>
                             <div className="feed-header">
                                 <img src={feed.image} alt="" className="feed-school-pic" />
                                 <div className="feed-school-info">

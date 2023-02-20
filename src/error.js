@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/error.css';
 import { useDispatch } from "react-redux";
 import { toggleLandingDropdown } from './store/landingDropdown';
@@ -17,7 +15,6 @@ const ErrorPage = () => {
 
     return (
         <div>
-            <TopNavbar />
             <main className="error-page" onClick={() => hideTopNav()}>
                 <div className="error-left">
                     <h1 className="error-text1">Ooops...</h1>
@@ -29,7 +26,6 @@ const ErrorPage = () => {
                     <img src={require('./img/image 1.png')} alt="" />
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

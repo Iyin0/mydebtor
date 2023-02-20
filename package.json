@@ -1,5 +1,4 @@
 {
-  "homepage": "https://iyin0.github.io/mydebtor",
   "name": "my_debtor_zuri",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +12,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-redux": "^8.0.2",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.8.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "redux-persist": "^6.0.0",

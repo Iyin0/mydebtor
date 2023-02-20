@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { toggleSideNav } from "./store/landingDropdown";
@@ -24,9 +22,7 @@ const FeedDetail = () => {
 
     return (
         <div>
-            <SideNavbar />
             <main className="feed-detail-page">
-                <SearchBar />
                 <div className="display-current-page">
                     <Link to='/dashboard' className="not-current-page">Home</Link>
                     <div className="page-svg-arrow">

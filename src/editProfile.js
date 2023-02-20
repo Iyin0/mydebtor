@@ -1,5 +1,3 @@
-import SearchBar from "./searchBar";
-import SideNavbar from "./sideNavbar";
 import './css/editProfile.css'
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
@@ -92,9 +90,7 @@ const EditProfile = () => {
 
     return (
         <div onClick={() => { hideEditDropdown() }}>
-            <SideNavbar />
             <div className="edit-profile-page">
-                <SearchBar />
                 <main className="edit-profile" >
                     <h1>Edit profile</h1>
                     <div className="user-detail">

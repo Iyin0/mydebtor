@@ -1,5 +1,3 @@
-import Footer from "./footer";
-import TopNavbar from "./topNavbar";
 import './css/landingPage.css'
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -62,8 +60,6 @@ const LandingPage = () => {
 
     return (
         <div>
-            <TopNavbar />
-
             <main onClick={() => hideTopNav()} className='landing-page'>
 
                 {/* Cookies */}
@@ -413,8 +409,6 @@ const LandingPage = () => {
                     </div>
                 </div>
             </main>
-
-            <Footer />
         </div>
     );
 }
